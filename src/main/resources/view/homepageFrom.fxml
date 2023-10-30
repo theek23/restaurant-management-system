@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="436.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.HomepageFormController">
+   <children>
+      <ImageView fitHeight="436.0" fitWidth="703.0">
+         <image>
+            <Image url="@../asset/bg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="599.0" opacity="0.5" prefHeight="43.0" prefWidth="104.0" style="-fx-background-color: black; -fx-background-radius: 30 0 0 30;" />
+      <Pane layoutX="157.0" prefHeight="88.0" prefWidth="379.0" style="-fx-background-color: rgba(194,217,255,0.7); -fx-background-radius: 10 200 10 200;">
+         <children>
+            <Text fill="#4400ff" layoutX="257.0" layoutY="33.0" stroke="#2e2e2e" strokeType="INSIDE" strokeWidth="0.0" text="TO">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="48.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" text="BATAKADE  INSIDE">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="32.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.01666666753590107" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fill="#4400ff" layoutX="83.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" text="WELCOME">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <JFXButton fx:id="cashierBtn" contentDisplay="TOP" layoutX="103.0" layoutY="177.0" onAction="#cashierBtnOnAction" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 30;" stylesheets="@../styles/homeBtnsStyle.css" text="CASHIER" textFill="#ff0404">
+         <font>
+            <Font name="Segoe UI" size="23.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0">
+               <image>
+                  <Image url="@../asset/Icons/cashier.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="adminBtn" contentDisplay="TOP" layoutX="429.0" layoutY="177.0" onAction="#adminBtnOnAction" prefHeight="170.0" prefWidth="170.0" style="-fx-background-radius: 30;" stylesheets="@../styles/homeBtnsStyle.css" text="ADMIN" textFill="#ff0404">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="70.0">
+               <image>
+                  <Image url="@../asset/Icons/admin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Segoe UI" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fx:id="time" fill="WHITE" layoutX="632.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2:23 AM">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" fill="WHITE" layoutX="608.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10/31/2021">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-4.0" layoutY="408.0" prefHeight="26.0" prefWidth="707.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="244.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed and Copyright by Theekshana De Silva">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

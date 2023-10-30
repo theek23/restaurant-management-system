@@ -1,0 +1,8 @@
+.button{
+    -fx-background-color: rgba(236, 204, 104, 0.8);
+    -fx-effect: dropshadow(gaussian, rgba(112, 161, 255,1.0), 10, 0, 5, 5);
+}
+.button:hover{
+    -fx-background-color: rgba(255, 165, 2, 1);
+    -fx-effect: dropshadow(gaussian, rgba(30, 144, 255,1.0), 10, 0, 5, 5);
+}
