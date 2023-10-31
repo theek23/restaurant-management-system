@@ -1,0 +1,22 @@
+/* Base Button Style */
+.button {
+    -fx-background-color: #00cec9;
+    -fx-text-fill: white; /* Text color */
+    -fx-background-radius: 5;
+    -fx-padding: 10 20; /* Adjust padding as needed */
+    -fx-font-size: 14px;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
+}
+
+/* Hover Effect */
+.button:hover {
+    -fx-background-color: #00a3a0; /* Change the background color on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0, 0, 5);
+}
+
+/* Pressed Effect */
+.button:pressed {
+    -fx-background-color: #008282; /* Change the background color when pressed */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0, 0, 7);
+}

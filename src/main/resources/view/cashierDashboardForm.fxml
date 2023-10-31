@@ -1,14 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="root" prefHeight="757.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.CashierDashboardFormController">
+<AnchorPane fx:id="root" prefHeight="757.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.CashierDashboardFormController">
     <children>
-        <AnchorPane layoutY="94.0" prefHeight="663.0" prefWidth="228.0" style="-fx-background-color: gray;">
+        <AnchorPane layoutY="94.0" prefHeight="663.0" prefWidth="228.0">
          <children>
-            <JFXButton layoutX="88.0" layoutY="105.0" />
+            <ImageView fitHeight="663.0" fitWidth="228.0">
+               <image>
+                  <Image url="@../asset/bg3.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="profileBtn" contentDisplay="TOP" onAction="#profileBtnOnAction" prefHeight="119.0" prefWidth="228.0" style="-fx-background-color: white;" text="Hello, Theekshana">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0">
+                     <image>
+                        <Image url="@../asset/Icons/profileIcon.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="-6.0" layoutY="118.0" prefWidth="233.0" />
+            <JFXButton fx:id="homeBtn" layoutY="119.0" onAction="#homeBtnOnAction" prefHeight="66.0" prefWidth="228.0" stylesheets="@../styles/buttonsStyle.css" text="HOME">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../asset/Icons/HomeIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="-3.0" layoutY="183.0" prefWidth="230.0" />
+            <JFXButton fx:id="orderBtn" layoutY="185.0" onAction="#orderBtnOnAction" prefHeight="66.0" prefWidth="228.0" stylesheets="@../styles/buttonsStyle.css" text="ORDER">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../asset/Icons/OrderIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="-3.0" layoutY="249.0" prefWidth="230.0" />
+            <JFXButton fx:id="inventoryBtn" layoutY="249.0" onAction="#inventoryBtnOnAction" prefHeight="66.0" prefWidth="228.0" stylesheets="@../styles/buttonsStyle.css" text="INVENTORY">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../asset/Icons/InvIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="-3.0" layoutY="313.0" prefWidth="230.0" />
+            <JFXButton fx:id="reportBtn" layoutY="313.0" onAction="#reportBtnOnAction" prefHeight="66.0" prefWidth="228.0" stylesheets="@../styles/buttonsStyle.css" text="REPORT">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0">
+                     <image>
+                        <Image url="@../asset/Icons/ReportIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="-3.0" layoutY="377.0" prefWidth="230.0" />
+            <JFXButton fx:id="settingsBtn" contentDisplay="GRAPHIC_ONLY" layoutX="81.0" layoutY="522.0" onAction="#settingsBtnOnAction" style="-fx-background-radius: 50;" stylesheets="@../styles/buttonsStyle.css">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@../asset/Icons/settingsIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="50.0" layoutY="606.0" onAction="#logoutBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="LOG OUT">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
          </children></AnchorPane>
-        <AnchorPane layoutX="228.0" layoutY="94.0" prefHeight="663.0" prefWidth="974.0" style="-fx-background-color: blue;" />
+        <AnchorPane layoutX="228.0" layoutY="94.0" prefHeight="663.0" prefWidth="975.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></AnchorPane>
+      <AnchorPane layoutY="28.0" prefHeight="66.0" prefWidth="1202.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="1203.0">
+               <image>
+                  <Image url="@../asset/bg2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="456.0" layoutY="10.0" text="Cashier Dashboard">
+               <font>
+                  <Font name="Segoe UI Bold" size="33.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.06315789371728897" green="0.06315789371728897" blue="0.06315789371728897" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.821052610874176" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Text fx:id="time" fill="#ff0606" layoutX="1129.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2:23 AM">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="date" fill="#ff0606" layoutX="1106.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10/31/2021">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="75.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../asset/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <MenuBar layoutX="-3.0" layoutY="1.0" prefHeight="26.0" prefWidth="1206.0">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-fill: white;" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Support" />
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
