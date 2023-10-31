@@ -28,11 +28,13 @@ public class CashierDashboardFormController {
     public JFXButton reportBtn;
     public JFXButton settingsBtn;
     public JFXButton profileBtn;
+    public AnchorPane optionContext;
 
     public void initialize(){
         setUi();
     }
 
+    @SneakyThrows
     private void setUi(){
         timeDate();
         profileBtn.setFocusTraversable(false);
@@ -55,21 +57,26 @@ public class CashierDashboardFormController {
         timeline.setCycleCount(Timeline.INDEFINITE);
         timeline.play();
     }
+    @SneakyThrows
+    private void setNavUI(String fileName){
+        optionContext.getChildren().clear();
+        optionContext.getChildren().add(FXMLLoader.load(getClass().getResource("../../../view/"+fileName+".fxml")));
+    }
 
     public void homeBtnOnAction(ActionEvent actionEvent) {
-
+        setNavUI("cashierHomeForm");
     }
 
     public void orderBtnOnAction(ActionEvent actionEvent) {
-
+        setNavUI("manageOrderForm");
     }
 
     public void inventoryBtnOnAction(ActionEvent actionEvent) {
-
+        setNavUI("cashierHomeForm");
     }
 
     public void reportBtnOnAction(ActionEvent actionEvent) {
-
+        setNavUI("cashierHomeForm");
     }
 
     public void settingsBtnOnAction(ActionEvent actionEvent) {

@@ -129,10 +129,6 @@
                </cursor>
             </JFXButton>
          </children></AnchorPane>
-        <AnchorPane layoutX="228.0" layoutY="94.0" prefHeight="663.0" prefWidth="975.0">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor></AnchorPane>
       <AnchorPane layoutY="28.0" prefHeight="66.0" prefWidth="1202.0">
          <children>
             <ImageView fitHeight="66.0" fitWidth="1203.0">
@@ -178,6 +174,10 @@
             </ImageView>
          </children>
       </AnchorPane>
+        <AnchorPane fx:id="optionContext" layoutX="228.0" layoutY="94.0" prefHeight="663.0" prefWidth="975.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></AnchorPane>
       <MenuBar layoutX="-3.0" layoutY="1.0" prefHeight="26.0" prefWidth="1206.0">
         <menus>
           <Menu mnemonicParsing="false" style="-fx-fill: white;" text="File">
