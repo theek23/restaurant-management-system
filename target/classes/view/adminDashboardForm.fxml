@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="757.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AdminDashboardForm">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="663.0" prefWidth="228.0" style="-fx-background-color: gray;">
+            <children>
+                <JFXButton layoutX="88.0" layoutY="105.0" />
+            </children></AnchorPane>
+        <AnchorPane layoutX="228.0" layoutY="94.0" prefHeight="663.0" prefWidth="974.0" style="-fx-background-color: blue;" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+Content Display
+
+System.out.println(homeBtn.getContentDisplay());
+        if (homeBtn.getContentDisplay()== ContentDisplay.LEFT){
+            homeBtn.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+        }else {
+            homeBtn.setContentDisplay(ContentDisplay.LEFT);
+        }
+
+
