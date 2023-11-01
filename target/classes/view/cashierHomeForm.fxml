@@ -1,8 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="663.0" prefWidth="975.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.CashierHomeFormController">
-
+<AnchorPane prefHeight="663.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.CashierHomeFormController">
+   <children>
+      <ImageView fitHeight="664.0" fitWidth="979.0" layoutX="-3.0" opacity="0.86">
+         <image>
+            <Image url="@../asset/bg4.jpg" />
+         </image>
+         <effect>
+            <BoxBlur iterations="2" />
+         </effect>
+      </ImageView>
+      <JFXTreeTableView layoutX="57.0" layoutY="283.0" prefHeight="316.0" prefWidth="861.0">
+         <columns>
+            <TreeTableColumn prefWidth="125.5999984741211" text="ORDER ID" />
+            <TreeTableColumn prefWidth="517.6000061035156" text="ITEMS" />
+            <TreeTableColumn prefWidth="116.00006103515625" text="TIME" />
+            <TreeTableColumn prefWidth="103.19989013671875" text="TOTAL" />
+         </columns>
+         <effect>
+            <DropShadow height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </JFXTreeTableView>
+      <Pane layoutX="57.0" layoutY="35.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="35.0" layoutY="14.0" text="UNPAID ORDERS">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="40.0" text="20" textFill="RED">
+               <font>
+                  <Font name="Segoe UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="80.0" text="0.00">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="349.0" layoutY="39.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="53.0" layoutY="16.0" text="PLACE ORDER">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="65.0" layoutY="52.0" onAction="#orderBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="INVOICE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="644.0" layoutY="39.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="64.0" layoutY="16.0" text="ADD STOCK">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="65.0" layoutY="51.0" onAction="#stocksBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="ADD STOCK">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="57.0" layoutY="159.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="PENDING DELIVERY">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="42.0" text="0" textFill="RED">
+               <font>
+                  <Font name="Segoe UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="189.0" layoutY="74.0" text="0.00">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="349.0" layoutY="158.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="80.0" layoutY="14.0" text="PAY BILL">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="65.0" layoutY="52.0" onAction="#orderBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="VIEW BILLS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="644.0" layoutY="158.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="64.0" layoutY="16.0" text="ADD STOCK">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="65.0" layoutY="51.0" onAction="#stocksBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="ADD STOCK">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="16.0" offsetX="10.0" offsetY="7.0" radius="11.75" width="33.0" />
+         </effect>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
 </AnchorPane>

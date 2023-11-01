@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="663.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.EditProfileController">
+   <children>
+      <Pane layoutX="71.0" layoutY="97.0" prefHeight="220.0" prefWidth="220.0" style="-fx-border-color: black; -fx-border-width: 5;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Profile.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Circle fill="DODGERBLUE" layoutX="288.0" layoutY="314.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="267.0" layoutY="298.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0">
+               <image>
+                  <Image url="@../asset/Icons/editIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="71.0" layoutY="420.0" text="NAME -" textFill="#5420ff">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="464.0" text="ADDRESS -" textFill="#5420ff">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="513.0" text="EMAIL -" textFill="#5420ff">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="562.0" text="Phone Number -" textFill="#5420ff">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="22.0" text="YOUR PROFILE" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="421.0" text="Theekshana De Silva">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="464.0" text="Hapugala, Galle">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="513.0" text="theekshanadesilva28@gmail.com">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="562.0" text="0765895457">
+         <font>
+            <Font name="Segoe UI Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="358.0" text="Personal Info" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="485.0" layoutY="79.0" orientation="VERTICAL" prefHeight="553.0" prefWidth="2.0" />
+      <JFXButton layoutX="68.0" layoutY="597.0" prefHeight="42.0" prefWidth="319.0" stylesheets="@../styles/buttonStyles.css" text="EDIT PROFILE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="512.0" layoutY="97.0" prefHeight="542.0" prefWidth="445.0" />
+   </children>
+</AnchorPane>

@@ -176,7 +176,7 @@
       </AnchorPane>
         <AnchorPane fx:id="optionContext" layoutX="228.0" layoutY="94.0" prefHeight="663.0" prefWidth="975.0">
          <cursor>
-            <Cursor fx:constant="HAND" />
+            <Cursor fx:constant="DEFAULT" />
          </cursor></AnchorPane>
       <MenuBar layoutX="-3.0" layoutY="1.0" prefHeight="26.0" prefWidth="1206.0">
         <menus>

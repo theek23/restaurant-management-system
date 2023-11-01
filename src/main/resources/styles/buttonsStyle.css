@@ -2,3 +2,7 @@
     -fx-background-color: rgba(9, 132, 227,0.2); /* Change the background color on hover */
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0, 0, 5);
 }
+/* Apply a Gaussian drop shadow effect to the Pane */
+.pane {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
+}

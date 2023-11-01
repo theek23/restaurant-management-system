@@ -38,6 +38,7 @@ public class CashierDashboardFormController {
     private void setUi(){
         timeDate();
         profileBtn.setFocusTraversable(false);
+        setNavUI("cashierHomeForm");
     }
     private void timeDate(){
         Timeline timeline = new Timeline(
@@ -102,7 +103,7 @@ public class CashierDashboardFormController {
     }
 
     public void profileBtnOnAction(ActionEvent actionEvent) {
-
+        setNavUI("editprofileForm");
     }
 
     @SneakyThrows
