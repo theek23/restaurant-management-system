@@ -120,7 +120,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
-            <JFXButton layoutX="50.0" layoutY="606.0" onAction="#logoutBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="LOG OUT">
+            <JFXButton layoutX="50.0" layoutY="606.0" onAction="#logoutBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/greenBtnStyles.css" text="LOG OUT">
                <font>
                   <Font size="15.0" />
                </font>
@@ -157,7 +157,7 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <Text fx:id="time" fill="#ff0606" layoutX="1129.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2:23 AM">
+            <Text fx:id="time" fill="#ff0606" layoutX="1129.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2:23 PM">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

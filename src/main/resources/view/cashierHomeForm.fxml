@@ -63,7 +63,7 @@
                   <Font name="Segoe UI Bold" size="23.0" />
                </font>
             </Label>
-            <JFXButton layoutX="65.0" layoutY="52.0" onAction="#orderBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="INVOICE">
+            <JFXButton layoutX="65.0" layoutY="52.0" onAction="#orderBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/greenBtnStyles.css" text="INVOICE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -83,7 +83,7 @@
                   <Font name="Segoe UI Bold" size="23.0" />
                </font>
             </Label>
-            <JFXButton layoutX="65.0" layoutY="51.0" onAction="#stocksBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="ADD STOCK">
+            <JFXButton layoutX="65.0" layoutY="51.0" onAction="#stocksBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/greenBtnStyles.css" text="ADD STOCK">
                <font>
                   <Font size="15.0" />
                </font>
@@ -125,7 +125,7 @@
                   <Font name="Segoe UI Bold" size="23.0" />
                </font>
             </Label>
-            <JFXButton layoutX="65.0" layoutY="52.0" onAction="#orderBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="VIEW BILLS">
+            <JFXButton layoutX="65.0" layoutY="52.0" onAction="#orderBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/greenBtnStyles.css" text="VIEW BILLS">
                <font>
                   <Font size="15.0" />
                </font>
@@ -145,7 +145,7 @@
                   <Font name="Segoe UI Bold" size="23.0" />
                </font>
             </Label>
-            <JFXButton layoutX="65.0" layoutY="51.0" onAction="#stocksBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/buttonStyles.css" text="ADD STOCK">
+            <JFXButton layoutX="65.0" layoutY="51.0" onAction="#stocksBtnOnAction" prefHeight="42.0" prefWidth="127.0" stylesheets="@../styles/greenBtnStyles.css" text="ADD STOCK">
                <font>
                   <Font size="15.0" />
                </font>

@@ -50,7 +50,7 @@
             </Text>
             <Text fill="#4400ff" layoutX="83.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" text="WELCOME">
                <font>
-                  <Font name="Segoe UI Bold" size="30.0" />
+                     <Font name="Segoe UI Bold" size="30.0" />
                </font>
             </Text>
          </children>

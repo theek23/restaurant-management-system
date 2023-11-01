@@ -1,8 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="663.0" prefWidth="975.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ManageOrderFormController">
-
+<AnchorPane prefHeight="663.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ManageOrderFormController">
+   <children>
+      <JFXTreeTableView layoutX="57.0" layoutY="291.0" prefHeight="316.0" prefWidth="861.0" stylesheets="@../styles/effectsStyles.css">
+         <columns>
+            <TreeTableColumn prefWidth="125.5999984741211" text="ORDER ID" />
+            <TreeTableColumn prefWidth="517.6000061035156" text="ITEMS" />
+            <TreeTableColumn prefWidth="116.00006103515625" text="TIME" />
+            <TreeTableColumn prefWidth="103.19989013671875" text="TOTAL" />
+         </columns>
+      </JFXTreeTableView>
+      <Pane layoutX="57.0" layoutY="45.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-radius: 10;" styleClass="Pane" stylesheets="@../styles/paneHoverStyle.css">
+         <children>
+            <Label layoutX="42.0" layoutY="14.0" text="TODAY ORDERS">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="42.0" text="0020" textFill="RED">
+               <font>
+                  <Font name="Segoe UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="80.0" text="0.00">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="358.0" layoutY="45.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-radius: 10;" styleClass="Pane" stylesheets="@../styles/paneHoverStyle.css">
+         <children>
+            <Label layoutX="34.0" layoutY="14.0" text="AVALABLE ITEMS">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="42.0" text="020" textFill="RED">
+               <font>
+                  <Font name="Segoe UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="71.0" layoutY="82.0" prefHeight="22.0" prefWidth="114.0" style="-fx-background-color: #00cec9;;" text="VIEW TODAY MENU" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="660.0" layoutY="45.0" prefHeight="109.0" prefWidth="258.0" style="-fx-background-radius: 10;" styleClass="Pane" stylesheets="@../styles/paneHoverStyle.css">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="PENDING DELIVERY">
+               <font>
+                  <Font name="Segoe UI Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="40.0" text="00" textFill="RED">
+               <font>
+                  <Font name="Segoe UI Bold" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="80.0" text="0.00">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="323.0" layoutY="206.0" prefHeight="54.0" prefWidth="328.0" stylesheets="@../styles/blueBtnStyles.css" text="Manage Orders">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
 </AnchorPane>
