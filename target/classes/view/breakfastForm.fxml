@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.BreakfastFormController">
+   <children>
+      <GridPane layoutX="9.0" layoutY="10.0" prefHeight="700.0" prefWidth="700.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton prefHeight="110.0" prefWidth="127.0" />
+            <JFXButton layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Veg H" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="16.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Egg H" textFill="WHITE" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="16.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Veg F" textFill="WHITE" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="116.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="216.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="316.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="416.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="516.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="616.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Egg F" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="116.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="216.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Fish H" textFill="WHITE" GridPane.columnIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="17.0" layoutY="16.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Chi H" textFill="WHITE" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="16.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Fish F" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="116.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="R&amp;C  Chi F" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="116.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="216.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="316.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="316.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="416.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="516.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="416.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="516.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="134.0" layoutY="616.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="616.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="216.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="316.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="416.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="516.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="368.0" layoutY="616.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="16.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="116.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="216.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="316.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="416.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="516.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="485.0" layoutY="616.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="16.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="116.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="216.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="316.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="416.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="601.0" layoutY="516.0" prefHeight="89.0" prefWidth="102.0" styleClass="jfx-button" stylesheets="@../styles/itemBtnsStyles.css" text="Button" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

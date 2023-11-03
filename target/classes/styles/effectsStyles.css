@@ -1,0 +1,4 @@
+/* Apply a Gaussian drop shadow effect to the TreeTableView */
+.tree-table-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
+}

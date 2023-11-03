@@ -1,0 +1,19 @@
+/* Apply this style to all JFXButton elements */
+.jfx-button {
+    -fx-background-color: #FF5722; /* Orange color */
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 3); /* Increased drop shadow depth */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Hover effect */
+.jfx-button:hover {
+    -fx-background-color: #FF7043; /* Hover color adjustment */
+}
+
+/* Pressed effect */
+.jfx-button:pressed {
+    -fx-background-color: #D84315; /* Pressed color adjustment (darker orange) */
+}
