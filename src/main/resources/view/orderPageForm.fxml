@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="824.0" prefWidth="1527.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.OrderPageFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="1498.0" style="-fx-background-color: gray;">
+         <children>
+            <JFXButton prefHeight="45.0" prefWidth="200.0" text="PLACE ORDER">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="200.0" prefHeight="45.0" prefWidth="200.0" text="UPDATE ORDER">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="400.0" prefHeight="45.0" prefWidth="200.0" text="REFUND ORDER">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="600.0" prefHeight="45.0" prefWidth="200.0" text="DELETE ORDER">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="800.0" prefHeight="45.0" prefWidth="200.0" text="DELETE ORDER">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Separator layoutX="760.0" layoutY="88.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="0.0" />
+      <AnchorPane fx:id="leftPane" layoutX="14.0" layoutY="88.0" prefHeight="706.0" prefWidth="738.0" />
+      <AnchorPane fx:id="rightPane" layoutX="774.0" layoutY="88.0" prefHeight="706.0" prefWidth="738.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+/* Add drop shadow to all buttons */
+.jfx-button {
+    -fx-background-color: #2196F3;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Hover effect */
+.jfx-button:hover {
+    -fx-background-color: #1976D2;
+}
+
+/* Pressed effect */
+.jfx-button:pressed {
+    -fx-background-color: #1565C0;
+}
