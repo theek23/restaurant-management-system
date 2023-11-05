@@ -2,6 +2,11 @@ package lk.rms.controller;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import lombok.SneakyThrows;
 
 public class BreakfastFormController {
     public JFXButton itemBtn1,itemBtn2,itemBtn3,itemBtn4,itemBtn5,itemBtn6,itemBtn7,itemBtn8,itemBtn9,itemBtn10,itemBtn11,
@@ -10,6 +15,7 @@ public class BreakfastFormController {
             itemBtn34,itemBtn35,itemBtn36,itemBtn37,itemBtn38,itemBtn39,itemBtn40,itemBtn41,itemBtn42;
 
 
+    @SneakyThrows
     public void itemsBtnsOnAction(ActionEvent actionEvent) {
         Object source = actionEvent.getSource();
 
@@ -18,5 +24,12 @@ public class BreakfastFormController {
             String buttonId = button.getId();
             System.out.println("Button ID: " + buttonId);
         }
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/qtyForm.fxml"))));
+        stage.setTitle("ADD QTY");
+        stage.setResizable(false);
+        stage.getIcons().add(new Image("asset/Logo.png"));
+        stage.centerOnScreen();
+        stage.show();
     }
 }
