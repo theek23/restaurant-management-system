@@ -1,14 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.rms.controller.DrinksFormController"
-            prefHeight="700.0" prefWidth="700.0">
-
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.DrinksFormController">
+   <children>
+      <Label layoutX="22.0" layoutY="25.0" text="Soft Drinks">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="22.0" layoutY="80.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/cocacola.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="97.0" layoutY="80.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/sprite.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="172.0" layoutY="80.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/fanta.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="22.0" layoutY="147.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/pepsi.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="97.0" layoutY="147.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/dew.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="172.0" layoutY="147.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/mirinda.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="247.0" layoutY="147.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/7up.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="323.0" layoutY="147.0" onAction="#softDrinksBtnsOnAction" prefHeight="28.0" prefWidth="41.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" textFill="#b3e1ff">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@../asset/Icons/deinks/sting.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="CENTER" layoutX="247.0" layoutY="80.0" onAction="#softDrinksBtnsOnAction" prefHeight="60.0" prefWidth="68.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" text="GINGER" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="CENTER" layoutX="323.0" layoutY="80.0" onAction="#softDrinksBtnsOnAction" prefHeight="60.0" prefWidth="68.0" style="-fx-border-color: black; -fx-background-color: #b3e1ff;" text="PORTELLO" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Bold" size="10.0" />
+         </font>
+      </JFXButton>
+      <TextField layoutX="418.0" layoutY="110.0" prefHeight="38.0" prefWidth="245.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="466.0" layoutY="168.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="144.0" text="SEARCH">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView layoutX="21.0" layoutY="230.0" prefHeight="200.0" prefWidth="658.0">
+        <columns>
+          <TableColumn prefWidth="657.599987411499" text="DRINK NAME" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="455.0" text="Hot Drinks">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="24.0" layoutY="513.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="TEA">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="248.0" layoutY="513.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Plain Tea">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="468.0" layoutY="513.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Coffie TEA">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="138.0" layoutY="513.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Plain Tea S">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="358.0" layoutY="513.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Nestomalt">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="579.0" layoutY="513.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Nescafe">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="23.0" layoutY="585.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Coffie">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="247.0" layoutY="585.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text=".....">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="467.0" layoutY="585.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text=".....">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="137.0" layoutY="585.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text="Samahan">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="357.0" layoutY="585.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text=".....">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="578.0" layoutY="585.0" mnemonicParsing="false" onAction="#hotDrinksBtnsOnAction" prefHeight="60.0" prefWidth="99.0" text=".....">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ChoiceBox layoutX="483.0" layoutY="455.0" prefHeight="28.0" prefWidth="191.0" />
+      <Separator layoutX="22.0" layoutY="443.0" prefHeight="0.0" prefWidth="658.0" />
+   </children>
 </AnchorPane>
