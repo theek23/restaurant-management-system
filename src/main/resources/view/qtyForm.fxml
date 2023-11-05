@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="324.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(to bottom, #a0a0db, #ffd4dd);;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.QTYFormController">
+   <children>
+      <BorderPane prefHeight="27.0" prefWidth="490.0">
+         <center>
+            <Label text="ADD Quantity for " BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <BorderPane layoutY="27.0" prefHeight="27.0" prefWidth="490.0">
+         <center>
+            <Label text="FOOD NAME" textFill="RED" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="29.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <TextField alignment="CENTER" layoutX="117.0" layoutY="120.0" prefHeight="59.0" prefWidth="255.0" text="0">
+         <font>
+            <Font name="Segoe UI Bold" size="31.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="117.0" layoutY="205.0" prefHeight="59.0" prefWidth="255.0" stylesheets="@../styles/blueBtnStyles.css" text="SUBMIT" textFill="#f40000">
+         <font>
+            <Font name="Segoe UI Bold" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
