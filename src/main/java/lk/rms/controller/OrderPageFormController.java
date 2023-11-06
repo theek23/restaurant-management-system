@@ -9,7 +9,7 @@ import lombok.SneakyThrows;
 
 public class OrderPageFormController {
     public AnchorPane leftPane;
-    public AnchorPane rightPane;
+    public AnchorPane rightPane1;
     public AnchorPane root;
 
     @SneakyThrows
@@ -25,5 +25,11 @@ public class OrderPageFormController {
         stage.setTitle("Cashier");
         stage.centerOnScreen();
         stage.show();
+    }
+
+    @SneakyThrows
+    public void calBtnOnAction(ActionEvent actionEvent) {
+        rightPane1.getChildren().clear();
+        rightPane1.getChildren().add(FXMLLoader.load(getClass().getResource("../../../view/calculatorForm.fxml")));
     }
 }

@@ -33,7 +33,7 @@
                   <Font name="Segoe UI" size="18.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="869.0" prefHeight="45.0" prefWidth="200.0" text="DELETE ORDER">
+            <JFXButton layoutX="869.0" onAction="#calBtnOnAction" prefHeight="45.0" prefWidth="200.0" text="CALCULATOR">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
@@ -54,6 +54,7 @@
       </Pane>
       <Separator layoutX="760.0" layoutY="88.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="0.0" />
       <AnchorPane fx:id="leftPane" layoutX="14.0" layoutY="88.0" prefHeight="706.0" prefWidth="738.0" />
-      <AnchorPane fx:id="rightPane" layoutX="774.0" layoutY="88.0" prefHeight="706.0" prefWidth="738.0" />
+      <AnchorPane fx:id="rightPane1" layoutX="774.0" layoutY="88.0" prefHeight="365.0" prefWidth="740.0" />
+      <Separator layoutX="774.0" layoutY="476.0" prefHeight="1.0" prefWidth="740.0" />
    </children>
 </AnchorPane>
