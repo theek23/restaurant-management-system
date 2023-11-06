@@ -23,5 +23,10 @@ public class ShortEatsFormController {
         stage.getIcons().add(new Image("asset/Logo.png"));
         stage.centerOnScreen();
         stage.show();
+
+
+        javafx.scene.Node sourceForClose = (javafx.scene.Node) actionEvent.getSource();
+        Stage thisWindowStage = (Stage) sourceForClose.getScene().getWindow();
+        thisWindowStage.close();
     }
 }

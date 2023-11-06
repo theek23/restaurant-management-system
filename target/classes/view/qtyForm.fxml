@@ -27,7 +27,7 @@
             </Label>
          </center>
       </BorderPane>
-      <TextField alignment="CENTER" layoutX="117.0" layoutY="120.0" prefHeight="59.0" prefWidth="255.0" text="0">
+      <TextField fx:id="qtyTextField" alignment="CENTER" layoutX="117.0" layoutY="120.0" onAction="#qtyTxtFieldOnAction" prefHeight="59.0" prefWidth="255.0" text="0">
          <font>
             <Font name="Segoe UI Bold" size="31.0" />
          </font>

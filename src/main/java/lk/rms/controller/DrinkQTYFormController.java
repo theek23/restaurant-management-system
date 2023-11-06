@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class QTYFormController {
+public class DrinkQTYFormController {
     public TextField qtyTextField;
 
     public void qtyTxtFieldOnAction(ActionEvent actionEvent) {

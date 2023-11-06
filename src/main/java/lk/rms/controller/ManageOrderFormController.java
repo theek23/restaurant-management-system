@@ -16,6 +16,7 @@ public class ManageOrderFormController {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/orderPageForm.fxml"))));
         stage.setTitle("Cashier");
         stage.centerOnScreen();
+//        stage.setMaximized(true);
         stage.show();
     }
 }
