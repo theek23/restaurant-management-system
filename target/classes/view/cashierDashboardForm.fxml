@@ -73,7 +73,7 @@
                </font>
             </JFXButton>
             <Separator layoutX="-3.0" layoutY="249.0" prefWidth="230.0" />
-            <JFXButton fx:id="inventoryBtn" layoutY="249.0" onAction="#inventoryBtnOnAction" prefHeight="66.0" prefWidth="228.0" stylesheets="@../styles/buttonsStyle.css" text="INVENTORY">
+            <JFXButton fx:id="itemBtn" layoutY="249.0" onAction="#itemBtnOnAction" prefHeight="66.0" prefWidth="228.0" stylesheets="@../styles/buttonsStyle.css" text="ITEMS">
                <graphic>
                   <ImageView fitHeight="45.0" fitWidth="45.0">
                      <image>

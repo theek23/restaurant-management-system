@@ -3,6 +3,8 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,30 +15,37 @@
    <children>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="1498.0" style="-fx-background-color: gray;">
          <children>
-            <JFXButton layoutX="69.0" prefHeight="45.0" prefWidth="200.0" text="PLACE ORDER">
+            <JFXButton fx:id="placeOrderBtn" layoutX="69.0" onAction="#placeOrderBtnOnAction" prefHeight="45.0" prefWidth="200.0" style="-fx-border-color: red;" text="PLACE ORDER">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
-            <JFXButton layoutX="269.0" prefHeight="45.0" prefWidth="200.0" text="UPDATE ORDER">
+            <JFXButton fx:id="editOrderBtn" layoutX="269.0" onAction="#editOrderBtnOnAction" prefHeight="45.0" prefWidth="200.0" text="EDIT ORDER">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
-            <JFXButton layoutX="469.0" prefHeight="45.0" prefWidth="200.0" text="REFUND ORDER">
+            <JFXButton fx:id="refundOrderBtn" layoutX="469.0" onAction="#refundOrderBtnOnAction" prefHeight="45.0" prefWidth="200.0" text="REFUND ORDER">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
-            <JFXButton layoutX="669.0" prefHeight="45.0" prefWidth="200.0" text="DELETE ORDER">
+            <JFXButton fx:id="calBtn" layoutX="669.0" onAction="#calBtnOnAction" prefHeight="45.0" prefWidth="200.0" text="CALCULATOR">
                <font>
                   <Font name="Segoe UI" size="18.0" />
                </font>
-            </JFXButton>
-            <JFXButton layoutX="869.0" onAction="#calBtnOnAction" prefHeight="45.0" prefWidth="200.0" text="CALCULATOR">
-               <font>
-                  <Font name="Segoe UI" size="18.0" />
-               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#backBtnOnAction" prefHeight="46.0" prefWidth="69.0">
                <graphic>
@@ -50,11 +59,30 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXButton>
+            <JFXButton fx:id="menuBtn" layoutX="869.0" onAction="#menuBtnOnAction" prefHeight="45.0" prefWidth="200.0" text="TODAY MENU">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
          </children>
       </Pane>
       <Separator layoutX="760.0" layoutY="88.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="0.0" />
       <AnchorPane fx:id="leftPane" layoutX="14.0" layoutY="88.0" prefHeight="706.0" prefWidth="738.0" />
       <AnchorPane fx:id="rightPane1" layoutX="774.0" layoutY="88.0" prefHeight="365.0" prefWidth="740.0" />
       <Separator layoutX="774.0" layoutY="476.0" prefHeight="1.0" prefWidth="740.0" />
+      <AnchorPane fx:id="rightPane2" layoutX="775.0" layoutY="492.0" prefHeight="321.0" prefWidth="738.0">
+         <children>
+            <TableView layoutY="12.0" prefHeight="296.0" prefWidth="738.0">
+              <columns>
+                <TableColumn prefWidth="101.5999755859375" text="Order ID" />
+                <TableColumn prefWidth="501.60003662109375" text="Items" />
+                  <TableColumn prefWidth="136.0" text="DATE &amp; TIME" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

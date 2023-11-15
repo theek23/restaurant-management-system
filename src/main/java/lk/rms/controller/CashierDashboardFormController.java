@@ -24,11 +24,11 @@ public class CashierDashboardFormController {
     public Text date;
     public JFXButton homeBtn;
     public JFXButton orderBtn;
-    public JFXButton inventoryBtn;
     public JFXButton reportBtn;
     public JFXButton settingsBtn;
     public JFXButton profileBtn;
     public AnchorPane optionContext;
+    public JFXButton itemBtn;
 
     public void initialize(){
         setUi();
@@ -72,8 +72,8 @@ public class CashierDashboardFormController {
         setNavUI("manageOrderForm");
     }
 
-    public void inventoryBtnOnAction(ActionEvent actionEvent) {
-        setNavUI("cashierHomeForm");
+    public void itemBtnOnAction(ActionEvent actionEvent) {
+        setNavUI("manageItemForm");
     }
 
     public void reportBtnOnAction(ActionEvent actionEvent) {
@@ -87,17 +87,17 @@ public class CashierDashboardFormController {
 
         if (homeBtn.getContentDisplay() == ContentDisplay.LEFT &&
             orderBtn.getContentDisplay() == ContentDisplay.LEFT &&
-            inventoryBtn.getContentDisplay() == ContentDisplay.LEFT &&
+            itemBtn.getContentDisplay() == ContentDisplay.LEFT &&
             reportBtn.getContentDisplay() == ContentDisplay.LEFT
         ){
             homeBtn.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
             orderBtn.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
-            inventoryBtn.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
+            itemBtn.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
             reportBtn.setContentDisplay(ContentDisplay.GRAPHIC_ONLY);
         }else {
             homeBtn.setContentDisplay(ContentDisplay.LEFT);
             orderBtn.setContentDisplay(ContentDisplay.LEFT);
-            inventoryBtn.setContentDisplay(ContentDisplay.LEFT);
+            itemBtn.setContentDisplay(ContentDisplay.LEFT);
             reportBtn.setContentDisplay(ContentDisplay.LEFT);
         }
     }

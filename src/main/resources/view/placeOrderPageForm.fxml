@@ -6,9 +6,10 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="706.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.PlaceOrderPageController">
    <children>
@@ -60,11 +61,6 @@
             <TableColumn prefWidth="96.80002441406248" text="Price" />
         </columns>
       </TableView>
-      <JFXButton layoutX="651.0" layoutY="42.0" onAction="#addItmBtnOnAcrion" style="-fx-background-color: gray;" text="ADD ITEM" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </JFXButton>
       <Label layoutX="256.0" layoutY="427.0" text="TOTAL : " textFill="RED">
          <font>
             <Font name="Segoe UI Bold" size="33.0" />
@@ -141,6 +137,15 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+      </JFXButton>
+      <JFXButton layoutX="652.0" layoutY="39.0" onAction="#addItmBtnOnAcrion" style="-fx-background-color: gray;" text="ADD" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../asset/Icons/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </JFXButton>
    </children>
 </AnchorPane>

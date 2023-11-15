@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="706.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.EditOrderPageFormController">
+    <children>
+      <TextField layoutX="424.0" layoutY="36.0" prefHeight="34.0" prefWidth="199.0" promptText="Order ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="34.0" layoutY="104.0" text="Order ID :">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="199.0" text="DATE :">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="104.0" text="Customer Name :">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="196.0" text="Customer Phone :">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="622.0" layoutY="296.0" onAction="#addItmBtnOnAcrion" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: gray;" text="ADD" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../asset/Icons/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="34.0" layoutY="650.0" prefHeight="52.0" prefWidth="274.0" style="-fx-background-color: gray;" text="UPDATE ORDER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="409.0" layoutY="650.0" prefHeight="52.0" prefWidth="298.0" style="-fx-background-color: gray;" text="ADD CASH" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="34.0" layoutY="333.0" prefHeight="202.0" prefWidth="670.0">
+         <columns>
+            <TableColumn prefWidth="91.20001220703125" text="Item ID" />
+            <TableColumn prefWidth="387.19993591308594" text="ITEM NAME" />
+            <TableColumn prefWidth="52.800048828125" text="QTY" />
+            <TableColumn prefWidth="72.800048828125" text="Price" />
+            <TableColumn prefWidth="92.00003662109373" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="34.0" layoutY="563.0" prefHeight="52.0" prefWidth="274.0" style="-fx-background-color: gray;" text="PRINT BILL" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="34.0" layoutY="147.0" text="O00-001" textFill="#0080ff">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="232.0" text="9:57 PM" textFill="#0080ff">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="144.0" text="Theekshana De Silva" textFill="#0080ff">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="237.0" text="076-5895457" textFill="#0080ff">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="256.0" text="11/14/2023" textFill="#0080ff">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="123.0" text="TOTAL : " textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="593.0" layoutY="124.0" text="000000.00" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="174.0" text="Cash :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="220.0" text="Balance :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="593.0" layoutY="217.0" text="000000.00" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="123.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="172.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="217.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="593.0" layoutY="172.0" text="000000.00" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="400.0" layoutY="88.0" orientation="VERTICAL" prefHeight="191.0" prefWidth="6.0" />
+      <Separator layoutX="34.0" layoutY="284.0" prefHeight="0.0" prefWidth="670.0" />
+      <Label layoutX="409.0" layoutY="543.0" text="NEW TOTAL : " textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="609.0" layoutY="544.0" text="000000.00" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="558.0" layoutY="543.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="577.0" text="New Cash :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="613.0" text="New Balance :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="608.0" layoutY="613.0" text="000000.00" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="577.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="559.0" layoutY="613.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField alignment="TOP_RIGHT" layoutX="602.0" layoutY="573.0" prefHeight="31.0" prefWidth="103.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="630.0" layoutY="36.0" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: gray;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
