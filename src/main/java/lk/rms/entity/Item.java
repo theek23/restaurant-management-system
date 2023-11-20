@@ -31,7 +31,7 @@ public class Item implements SuperEntity{
     @Column(name = "selling_price")
     private Double sellingPrice;
     @Column(name = "qty_on_hand")
-    private Integer qtyOnHand;
+    private String qtyOnHand;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "item")
     private List<QtyDetails> qtyDetails = new ArrayList<>();

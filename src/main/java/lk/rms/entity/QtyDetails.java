@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.CollectionId;
 
 import javax.persistence.*;
 
@@ -23,6 +24,8 @@ public class QtyDetails implements SuperEntity {
     private Double cost;
     @Column (name = "payment_status" )
     private String paymentStatus;
+    @Column (name = "qty")
+    private Integer qty;
 
     @ManyToOne
     @JoinColumn(name = "item_id",
