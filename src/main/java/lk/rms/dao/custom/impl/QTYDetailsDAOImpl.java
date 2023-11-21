@@ -1,7 +1,6 @@
 package lk.rms.dao.custom.impl;
 
 import lk.rms.dao.custom.QTYDetailsDAO;
-import lk.rms.entity.Item;
 import lk.rms.entity.QtyDetails;
 import lk.rms.util.FactoryConfiguration;
 import org.hibernate.Session;
