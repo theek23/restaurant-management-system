@@ -31,7 +31,16 @@ public class Item implements SuperEntity{
     @Column(name = "selling_price")
     private Double sellingPrice;
     @Column(name = "qty_on_hand")
-    private String qtyOnHand;
+    private Integer qtyOnHand;
+
+    public Item(String itemID, String category, String subCategory, String description, Double sellingPrice, Integer qtyOnHand) {
+        this.itemID = itemID;
+        this.category = category;
+        this.subCategory = subCategory;
+        this.description = description;
+        this.sellingPrice = sellingPrice;
+        this.qtyOnHand = qtyOnHand;
+    }
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "item")
     private List<QtyDetails> qtyDetails = new ArrayList<>();
