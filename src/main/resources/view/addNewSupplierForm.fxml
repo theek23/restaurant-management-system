@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550" prefWidth="890" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddNewSupplierController">
+   <children>
+      <TextField fx:id="supIdTxt" layoutX="39.0" layoutY="123.0" prefHeight="40.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="39.0" layoutY="76.0" text="SUPPLIER ID :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="178.0" text="TYPE :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="typeCombo" layoutX="39.0" layoutY="232.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="nameTxt" layoutX="548.0" layoutY="123.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="548.0" layoutY="76.0" text="NAME :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pNoTxt" layoutX="548.0" layoutY="225.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="548.0" layoutY="178.0" text="PHONE NO :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressTxt" layoutX="271.0" layoutY="349.0" prefHeight="40.0" prefWidth="346.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="394.0" layoutY="296.0" text="ADDRESS :" textFill="RED">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="saveBtn" layoutX="251.0" layoutY="453.0" onAction="#saveBtnOnAction" prefHeight="59.0" prefWidth="386.0" stylesheets="@../styles/blueBtnStyles.css" text="SAVE">
+         <font>
+            <Font name="Segoe UI Bold" size="28.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

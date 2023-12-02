@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="663.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ManageSupplierFormController">
+    <children>
+      <AnchorPane fx:id="supplierRoot" layoutX="33.0" layoutY="91.0" prefHeight="550.0" prefWidth="890.0" />
+      <Pane layoutX="47.0" layoutY="18.0" prefHeight="58.0" prefWidth="862.0" style="-fx-border-color: black;">
+         <children>
+            <JFXButton fx:id="editSupBtn" layoutX="356.0" layoutY="12.0" onAction="#editSupBtnOnAction" prefHeight="34.0" prefWidth="151.0" stylesheets="@../styles/blueBtnStyles.css" text="Edit Supplier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="viewSupBtn" layoutX="14.0" layoutY="12.0" onAction="#viewSupBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-border-color: red; -fx-border-radius: 2;" stylesheets="@../styles/blueBtnStyles.css" text="View Suppiers">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="reportSupBtn" layoutX="528.0" layoutY="12.0" onAction="#repotSupBtnOnAction" prefHeight="34.0" prefWidth="151.0" stylesheets="@../styles/blueBtnStyles.css" text="Supplier Repots">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="historySupBtn" layoutX="697.0" layoutY="12.0" onAction="#historySupBtnOnAction" prefHeight="34.0" prefWidth="151.0" stylesheets="@../styles/blueBtnStyles.css" text="Supplier History">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="newSupBtn" layoutX="186.0" layoutY="12.0" onAction="#newSupBtnOnAction" prefHeight="34.0" prefWidth="151.0" stylesheets="@../styles/blueBtnStyles.css" text="Add New Supplier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

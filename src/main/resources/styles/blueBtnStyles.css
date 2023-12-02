@@ -2,7 +2,7 @@
 .button {
     -fx-background-color: rgba(116, 185, 255, 1.0); /* Background color */
     -fx-text-fill: white; /* Text color */
-    -fx-padding: 10 20; /* Adjust padding as needed */
+    /*-fx-padding: 10 20; !* Adjust padding as needed *!*/
     -fx-border-color: transparent;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
 }
@@ -17,4 +17,7 @@
 .button:pressed {
     -fx-background-color: rgba(50, 100, 150, 1.0); /* Change the background color when pressed */
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0, 0, 7);
+}
+.txt-field{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 3);
 }
