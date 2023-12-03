@@ -1,6 +1,6 @@
 package lk.rms.dao.custom.impl;
 
-import lk.rms.dao.custom.SupllierDAO;
+import lk.rms.dao.custom.SupplierDAO;
 import lk.rms.entity.Supplier;
 import lk.rms.util.FactoryConfiguration;
 import org.hibernate.Session;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class SupplierDAOImpl implements SupllierDAO {
+public class SupplierDAOImpl implements SupplierDAO {
     @Override
     public ArrayList<Supplier> getAll() {
         Session session = FactoryConfiguration.getInstance().getSession();

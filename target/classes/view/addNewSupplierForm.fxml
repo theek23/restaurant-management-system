@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550" prefWidth="890" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddNewSupplierController">
+<AnchorPane fx:id="root" prefHeight="550" prefWidth="890" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddNewSupplierController">
    <children>
-      <TextField layoutX="39.0" layoutY="123.0" prefHeight="40.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+      <TextField fx:id="supIdTxt" layoutX="39.0" layoutY="123.0" prefHeight="40.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
          <font>
             <Font size="18.0" />
          </font>
@@ -24,8 +24,8 @@
             <Font name="Segoe UI Bold" size="20.0" />
          </font>
       </Label>
-      <ComboBox layoutX="39.0" layoutY="232.0" prefHeight="40.0" prefWidth="250.0" />
-      <TextField layoutX="548.0" layoutY="123.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+      <ComboBox fx:id="typeCombo" layoutX="39.0" layoutY="232.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="nameTxt" layoutX="548.0" layoutY="123.0" onKeyPressed="#nameTxtOnKeyPressed" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
          <font>
             <Font size="18.0" />
          </font>
@@ -35,7 +35,7 @@
             <Font name="Segoe UI Bold" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="548.0" layoutY="225.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+      <TextField fx:id="pNoTxt" layoutX="548.0" layoutY="225.0" onKeyTyped="#pNoTxtOnKeyPressed" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
          <font>
             <Font size="18.0" />
          </font>
@@ -45,7 +45,7 @@
             <Font name="Segoe UI Bold" size="20.0" />
          </font>
       </Label>
-      <TextField layoutX="271.0" layoutY="349.0" prefHeight="40.0" prefWidth="346.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+      <TextField fx:id="addressTxt" layoutX="271.0" layoutY="349.0" prefHeight="40.0" prefWidth="346.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
          <font>
             <Font size="18.0" />
          </font>
@@ -55,7 +55,7 @@
             <Font name="Segoe UI Bold" size="20.0" />
          </font>
       </Label>
-      <JFXButton layoutX="251.0" layoutY="453.0" prefHeight="59.0" prefWidth="386.0" stylesheets="@../styles/blueBtnStyles.css" text="SAVE">
+      <JFXButton fx:id="saveBtn" layoutX="251.0" layoutY="453.0" onAction="#saveBtnOnAction" prefHeight="59.0" prefWidth="386.0" stylesheets="@../styles/blueBtnStyles.css" text="SAVE">
          <font>
             <Font name="Segoe UI Bold" size="28.0" />
          </font>

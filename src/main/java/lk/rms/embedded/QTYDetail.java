@@ -6,12 +6,13 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import java.io.Serializable;
 
+@Embeddable
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Embeddable
-public class QTYDetail {
+public class QTYDetail implements Serializable {
     @Column(name = "item_id")
     private String itemID;
     @Column(name ="sup_id")
