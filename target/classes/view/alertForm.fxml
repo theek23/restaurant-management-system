@@ -15,7 +15,7 @@
    <children>
       <ImageView fx:id="image" fitHeight="70.0" fitWidth="70.0" layoutX="37.0" layoutY="63.0">
          <image>
-            <Image url="@../asset/Icons/done.gif" />
+            <Image url="@../asset/Icons/smile.png" />
          </image>
       </ImageView>
       <GridPane layoutX="126.0" prefHeight="186.0" prefWidth="421.0">

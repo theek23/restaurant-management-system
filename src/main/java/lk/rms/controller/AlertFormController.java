@@ -14,8 +14,8 @@ public class AlertFormController {
     public Label msgLbl;
     public JFXButton okBtn;
 
-    public void setUi(String imagePath, String msgTitle, String msg) {
-        image.setImage(new Image(imagePath));
+    public void setUi(Image newImage, String msgTitle, String msg) {
+        image.setImage(newImage);
         msgTitleLbl.setText(msgTitle);
         msgLbl.setText(msg);
     }
