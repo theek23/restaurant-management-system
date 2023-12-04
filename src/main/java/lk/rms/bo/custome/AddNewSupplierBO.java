@@ -25,4 +25,7 @@ public interface AddNewSupplierBO extends SuperBO {
 
     @SneakyThrows
     boolean deleteSupplier(String supID);
+
+    @SneakyThrows
+    String generateNewId();
 }

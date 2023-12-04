@@ -4,7 +4,6 @@ import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
@@ -35,6 +34,7 @@ public class AddNewSupplierController {
         typeCombo.setItems(types);
 
         typeCombo.setPromptText("Select Supplier Type");
+        supIdTxt.setText(addNewSupplierBO.generateNewId());
     }
     @SneakyThrows
     public void saveBtnOnAction(ActionEvent actionEvent) {
@@ -50,13 +50,14 @@ public class AddNewSupplierController {
             boolean isSaved = addNewSupplierBO.saveSupplier(dto);
 
             if (isSaved){
-                System.out.println("Wade hari bozaaaa");
-                new JFXAlertBox().show();
+                new JFXAlertBox().success("Supplier Saved Successfully.");
+                clear();
             }else {
+                new JFXAlertBox().error("Something wrong please check log files");
                 System.out.println("awlak");
             }
         }else {
-            new Alert(Alert.AlertType.ERROR,"Please check again").show();
+            new JFXAlertBox().warning("Check inserted data again");
         }
     }
     private boolean isFieldsAreFilled(){
@@ -87,5 +88,12 @@ public class AddNewSupplierController {
                 pNoTxt.setStyle("");
             }
         }
+    }
+    private void clear(){
+        supIdTxt.setText(addNewSupplierBO.generateNewId());
+        nameTxt.setText("");
+        pNoTxt.setText("");
+        addressTxt.setText("");
+        typeCombo.setValue(null);
     }
 }

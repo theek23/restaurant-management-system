@@ -72,4 +72,21 @@ public class AddNewSupplierBOImpl implements AddNewSupplierBO {
     public boolean deleteSupplier(String supID) {
         return supplierDAO.delete(supID);
     }
+
+    @Override
+    public String generateNewId() {
+        String lastID = supplierDAO.generateNewID();
+
+        if (lastID == null) {
+            return "SUP00-0001";
+        } else {
+            int lastNumber = Integer.parseInt(lastID.substring(7));
+
+            int newNumber = lastNumber+1;
+
+            String newId = String.format("SUP00-%04d", newNumber);
+
+            return newId;
+        }
+    }
 }

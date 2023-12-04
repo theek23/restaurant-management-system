@@ -104,6 +104,17 @@ public class SupplierDAOImpl implements SupplierDAO {
 
     @Override
     public String generateNewID() {
-        return null;
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        String hql = "SELECT s.supId FROM Supplier s ORDER BY s.supId DESC";
+        Query query = session.createQuery(hql);
+        query.setMaxResults(1);
+        String lastSupplierId = (String) query.uniqueResult();
+
+        transaction.commit();
+        session.close();
+
+        return lastSupplierId;
     }
 }
