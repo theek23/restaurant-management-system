@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.rms.bo.BOFactory;
-import lk.rms.bo.custome.AddNewSupplierBO;
+import lk.rms.bo.custome.SupplierBO;
 import lk.rms.dto.SupplierDTO;
 import lk.rms.util.AlertBOX.JFXAlertBox;
 import lombok.SneakyThrows;
@@ -23,7 +23,7 @@ public class AddNewSupplierController {
     public JFXButton saveBtn;
     public AnchorPane root;
 
-    AddNewSupplierBO addNewSupplierBO = (AddNewSupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADDNEWSUPPIER);
+    SupplierBO supplierBO = (SupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADDNEWSUPPIER);
 
     public void initialize(){
         setUi();
@@ -34,7 +34,7 @@ public class AddNewSupplierController {
         typeCombo.setItems(types);
 
         typeCombo.setPromptText("Select Supplier Type");
-        supIdTxt.setText(addNewSupplierBO.generateNewId());
+        supIdTxt.setText(supplierBO.generateNewId());
     }
     @SneakyThrows
     public void saveBtnOnAction(ActionEvent actionEvent) {
@@ -47,7 +47,7 @@ public class AddNewSupplierController {
                     pNoTxt.getText(),
                     addressTxt.getText());
 
-            boolean isSaved = addNewSupplierBO.saveSupplier(dto);
+            boolean isSaved = supplierBO.saveSupplier(dto);
 
             if (isSaved){
                 new JFXAlertBox().success("Supplier Saved Successfully.");
@@ -90,7 +90,7 @@ public class AddNewSupplierController {
         }
     }
     private void clear(){
-        supIdTxt.setText(addNewSupplierBO.generateNewId());
+        supIdTxt.setText(supplierBO.generateNewId());
         nameTxt.setText("");
         pNoTxt.setText("");
         addressTxt.setText("");

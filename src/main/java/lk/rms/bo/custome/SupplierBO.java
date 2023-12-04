@@ -7,7 +7,7 @@ import lombok.SneakyThrows;
 
 import java.util.ArrayList;
 
-public interface AddNewSupplierBO extends SuperBO {
+public interface SupplierBO extends SuperBO {
     @SneakyThrows
     ArrayList<SupplierDTO> getAllSupplier();
 

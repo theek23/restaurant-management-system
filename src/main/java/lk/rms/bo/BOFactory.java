@@ -1,7 +1,7 @@
 package lk.rms.bo;
 
 import lk.rms.bo.custome.impl.AddNewItemBOImpl;
-import lk.rms.bo.custome.impl.AddNewSupplierBOImpl;
+import lk.rms.bo.custome.impl.SupplierBOImpl;
 
 public class BOFactory {
     private static BOFactory boFactory;
@@ -19,7 +19,7 @@ public class BOFactory {
                 return new AddNewItemBOImpl();
 
             case ADDNEWSUPPIER:
-                return new AddNewSupplierBOImpl();
+                return new SupplierBOImpl();
             default:
                 return null;
         }

@@ -8,24 +8,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <AnchorPane prefHeight="550" prefWidth="890" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ViewSuppliersFormController">
    <children>
-      <JFXTreeTableView layoutX="14.0" layoutY="79.0" prefHeight="470.0" prefWidth="862.0" stylesheets="@../styles/effectsStyles.css">
+      <TableView fx:id= "supTable" layoutX="14.0" layoutY="79.0" prefHeight="470.0" prefWidth="862.0" stylesheets="@../styles/effectsStyles.css">
          <columns>
-            <TreeTableColumn prefWidth="125.5999984741211" text="SUPPLIER ID" />
-            <TreeTableColumn prefWidth="360.7999572753906" text="SUPPLIER NAME" />
-            <TreeTableColumn prefWidth="152.0" text="PHONE NO" />
-            <TreeTableColumn prefWidth="112.79998779296875" text="LAST PAYMENT" />
-            <TreeTableColumn prefWidth="112.79998779296875" text="DEW PAYMENT" />
+            <TableColumn fx:id="idColumn" prefWidth="125.5999984741211" text="SUPPLIER ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="344.00001525878906" text="SUPPLIER NAME" />
+            <TableColumn fx:id="pnoColumn" prefWidth="168.79998779296875" text="PHONE NO" />
+            <TableColumn fx:id="addressColumn" prefWidth="112.79998779296875" text="ADDRESS" />
+            <TableColumn fx:id="typeColumn" prefWidth="112.79998779296875" text="SUPPLIER TYPE" />
          </columns>
-      </JFXTreeTableView>
-      <TextField layoutX="508.0" layoutY="25.0" prefHeight="34.0" prefWidth="238.0" promptText="Supplier name" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+      </TableView>
+      <TextField fx:id="supNameFeild" layoutX="508.0" layoutY="25.0" prefHeight="34.0" prefWidth="238.0" promptText="Supplier name" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <JFXButton layoutX="780.0" layoutY="25.0" prefHeight="34.0" prefWidth="96.0" stylesheets="@../styles/blueBtnStyles.css" text="SEARCH">
+      <JFXButton fx:id="searchBtn" layoutX="780.0" layoutY="25.0" onAction="#srchBtnOnAction" prefHeight="34.0" prefWidth="96.0" stylesheets="@../styles/blueBtnStyles.css" text="SEARCH">
          <font>
             <Font size="14.0" />
          </font>

@@ -1,6 +1,6 @@
 package lk.rms.bo.custome.impl;
 
-import lk.rms.bo.custome.AddNewSupplierBO;
+import lk.rms.bo.custome.SupplierBO;
 import lk.rms.dao.DAOFactory;
 import lk.rms.dao.custom.SupplierDAO;
 import lk.rms.dto.SupplierDTO;
@@ -8,7 +8,7 @@ import lk.rms.entity.Supplier;
 
 import java.util.ArrayList;
 
-public class AddNewSupplierBOImpl implements AddNewSupplierBO {
+public class SupplierBOImpl implements SupplierBO {
     private final SupplierDAO supplierDAO = (SupplierDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.SUPPLIER);
 
     @Override
