@@ -89,4 +89,21 @@ public class SupplierBOImpl implements SupplierBO {
             return newId;
         }
     }
+
+    @Override
+    public ArrayList<SupplierDTO> searchByName(String enteredName) {
+
+        ArrayList<SupplierDTO> allSuppliers = getAllSupplier();
+        ArrayList<SupplierDTO> resultSuppliers = new ArrayList<>();
+
+        for (SupplierDTO supplier : allSuppliers) {
+            String supplierName = supplier.getName();
+
+            if (supplierName.compareTo(enteredName) > 0) {
+                resultSuppliers.add(supplier);
+            }
+        }
+
+        return resultSuppliers;
+    }
 }

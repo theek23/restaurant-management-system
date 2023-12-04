@@ -28,4 +28,6 @@ public interface SupplierBO extends SuperBO {
 
     @SneakyThrows
     String generateNewId();
+
+    ArrayList<SupplierDTO> searchByName(String enteredName);
 }

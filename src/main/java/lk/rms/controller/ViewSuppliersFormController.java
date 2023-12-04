@@ -5,6 +5,7 @@ import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyEvent;
 import lk.rms.bo.BOFactory;
 import lk.rms.bo.custome.SupplierBO;
 import lk.rms.controller.tdm.SupplierTM;
@@ -54,5 +55,15 @@ public class ViewSuppliersFormController {
     }
     public void srchBtnOnAction(ActionEvent actionEvent) {
 
+    }
+
+    public void supNameFeildOnAction(KeyEvent actionEvent) {
+        System.out.println(supNameFeild.getText());
+        ArrayList<SupplierDTO> resultSuppliers = supplierBO.searchByName(supNameFeild.getText());
+        supTable.getItems().clear();
+        for (SupplierDTO supplier : resultSuppliers) {
+            System.out.println(supplier.getSupId()+"TEST - "+ supplier.getName());
+            supTable.getItems().add(new SupplierTM(supplier.getSupId(), supplier.getName(), supplier.getPhone(), supplier.getAddress(), supplier.getSupType()));
+        }
     }
 }

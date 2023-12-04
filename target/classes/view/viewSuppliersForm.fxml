@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTreeTableView?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <AnchorPane prefHeight="550" prefWidth="890" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ViewSuppliersFormController">
    <children>
-      <TableView fx:id= "supTable" layoutX="14.0" layoutY="79.0" prefHeight="470.0" prefWidth="862.0" stylesheets="@../styles/effectsStyles.css">
+      <TableView fx:id="supTable" layoutX="14.0" layoutY="79.0" prefHeight="470.0" prefWidth="862.0" stylesheets="@../styles/effectsStyles.css">
          <columns>
             <TableColumn fx:id="idColumn" prefWidth="125.5999984741211" text="SUPPLIER ID" />
             <TableColumn fx:id="nameColumn" prefWidth="344.00001525878906" text="SUPPLIER NAME" />
@@ -21,7 +19,7 @@
             <TableColumn fx:id="typeColumn" prefWidth="112.79998779296875" text="SUPPLIER TYPE" />
          </columns>
       </TableView>
-      <TextField fx:id="supNameFeild" layoutX="508.0" layoutY="25.0" prefHeight="34.0" prefWidth="238.0" promptText="Supplier name" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+      <TextField fx:id="supNameFeild" layoutX="508.0" layoutY="25.0" onKeyTyped="#supNameFeildOnAction" prefHeight="34.0" prefWidth="238.0" promptText="Supplier name" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
          <font>
             <Font size="15.0" />
          </font>
