@@ -59,7 +59,7 @@ public class SupplierDAOImpl implements SupplierDAO {
         Transaction transaction = session.beginTransaction();
 
         Supplier supplier = session.load(Supplier.class, supplierId);
-        session.detach(supplier);
+        session.delete(supplier);
 
         transaction.commit();
         session.close();
@@ -72,9 +72,9 @@ public class SupplierDAOImpl implements SupplierDAO {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql = "FROM Supplier WHERE supplier_id =:sid";
+        String hql = "FROM Supplier WHERE supId =:sid";
         Query query = session.createQuery(hql);
-        query.setParameter("sID", supplierId);
+        query.setParameter("sid", supplierId);
         List<Supplier> list = query.list();
 
         transaction.commit();

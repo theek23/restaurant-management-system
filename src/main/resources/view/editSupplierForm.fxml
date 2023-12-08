@@ -22,8 +22,8 @@
                 <Font name="Segoe UI Bold" size="20.0" />
             </font>
         </Label>
-        <ComboBox layoutX="32.0" layoutY="227.0" prefHeight="34.0" prefWidth="250.0" />
-        <TextField layoutX="548.0" layoutY="123.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+        <ComboBox fx:id="typeCombo" layoutX="41.0" layoutY="228.0" onAction="#typeComboOnAction" prefHeight="34.0" prefWidth="250.0" />
+        <TextField fx:id="nameTxt" layoutX="548.0" layoutY="123.0" onKeyTyped="#OnKeyTyped" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
             <font>
                 <Font size="18.0" />
             </font>
@@ -33,7 +33,7 @@
                 <Font name="Segoe UI Bold" size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="548.0" layoutY="225.0" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+        <TextField fx:id="pNoTxt" layoutX="548.0" layoutY="225.0" onKeyTyped="#OnKeyTyped" prefWidth="250.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
             <font>
                 <Font size="18.0" />
             </font>
@@ -43,7 +43,7 @@
                 <Font name="Segoe UI Bold" size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="271.0" layoutY="349.0" prefHeight="40.0" prefWidth="346.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+        <TextField fx:id="addressTxt" layoutX="271.0" layoutY="349.0" onKeyTyped="#OnKeyTyped" prefHeight="40.0" prefWidth="346.0" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
             <font>
                 <Font size="18.0" />
             </font>
@@ -53,17 +53,17 @@
                 <Font name="Segoe UI Bold" size="20.0" />
             </font>
         </Label>
-        <JFXButton layoutX="191.0" layoutY="457.0" prefHeight="59.0" prefWidth="386.0" stylesheets="@../styles/blueBtnStyles.css" text="SAVE">
+        <JFXButton fx:id="saveBtn" layoutX="191.0" layoutY="457.0" onAction="#saveBtnOnAction" prefHeight="59.0" prefWidth="386.0" stylesheets="@../styles/blueBtnStyles.css" text="SAVE">
             <font>
                 <Font name="Segoe UI Bold" size="28.0" />
             </font>
         </JFXButton>
-        <TextField fx:id="searchField" layoutX="244.0" layoutY="21.0" onAction="#searchFieldOnActoion" prefHeight="34.0" prefWidth="302.0" promptText="Supplier ID" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
+        <TextField fx:id="searchField" layoutX="244.0" layoutY="21.0" onAction="#searchFieldOnAction" onKeyTyped="#searchFieldOnKeyTyped" prefHeight="34.0" prefWidth="302.0" promptText="Supplier ID" styleClass="txt-field" stylesheets="@../styles/blueBtnStyles.css">
             <font>
                 <Font size="15.0" />
             </font>
         </TextField>
-        <JFXButton fx:id="searchBtn" layoutX="561.0" layoutY="21.0" onAction="#searchFieldOnActoion" prefHeight="34.0" prefWidth="96.0" stylesheets="@../styles/blueBtnStyles.css" text="SEARCH">
+        <JFXButton fx:id="searchBtn" layoutX="561.0" layoutY="21.0" onAction="#searchFieldOnAction" prefHeight="34.0" prefWidth="96.0" stylesheets="@../styles/blueBtnStyles.css" text="SEARCH">
             <font>
                 <Font size="14.0" />
             </font>
@@ -71,12 +71,12 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
-      <Label layoutX="37.0" layoutY="126.0" text="SP-00001">
+      <Label fx:id="supIdTxt" layoutX="39.0" layoutY="126.0" text="SUPID">
          <font>
             <Font name="Segoe UI Bold" size="27.0" />
          </font>
       </Label>
-      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="621.0" layoutY="457.0" prefHeight="59.0" prefWidth="75.0" stylesheets="@../styles/deleteBtnStyles.css" text="SAVE">
+      <JFXButton fx:id="deleteBtn" contentDisplay="GRAPHIC_ONLY" layoutX="621.0" layoutY="457.0" onAction="#deleteBtnOnAction" prefHeight="59.0" prefWidth="75.0" stylesheets="@../styles/deleteBtnStyles.css" text="SAVE">
          <font>
             <Font name="Segoe UI Bold" size="28.0" />
          </font>

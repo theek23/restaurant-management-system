@@ -23,7 +23,7 @@ public class AddNewSupplierController {
     public JFXButton saveBtn;
     public AnchorPane root;
 
-    SupplierBO supplierBO = (SupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADDNEWSUPPIER);
+    SupplierBO supplierBO = (SupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.SUPPLIER);
 
     public void initialize(){
         setUi();
@@ -44,8 +44,8 @@ public class AddNewSupplierController {
                     supIdTxt.getText(),
                     typeCombo.getSelectionModel().getSelectedItem().toString(),
                     nameTxt.getText(),
-                    pNoTxt.getText(),
-                    addressTxt.getText());
+                    addressTxt.getText(),
+                    pNoTxt.getText());
 
             boolean isSaved = supplierBO.saveSupplier(dto);
 

@@ -11,14 +11,14 @@ public class BOFactory {
     public static BOFactory getBoFactory(){return boFactory == null ? boFactory = new BOFactory() : boFactory;}
 
     public enum BOTypes{
-        ADDNEWITEM , ADDNEWSUPPIER
+        ADDNEWITEM , SUPPLIER
     }
     public SuperBO getBO(BOTypes types){
         switch (types){
             case ADDNEWITEM:
                 return new AddNewItemBOImpl();
 
-            case ADDNEWSUPPIER:
+            case SUPPLIER:
                 return new SupplierBOImpl();
             default:
                 return null;

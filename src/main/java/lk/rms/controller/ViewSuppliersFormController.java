@@ -25,7 +25,7 @@ public class ViewSuppliersFormController {
     public TableColumn addressColumn;
     public TableColumn typeColumn;
 
-    SupplierBO supplierBO = (SupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADDNEWSUPPIER);
+    SupplierBO supplierBO = (SupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.SUPPLIER);
 
     public void initialize(){
         setUi();
@@ -45,7 +45,6 @@ public class ViewSuppliersFormController {
         try {
             ArrayList<SupplierDTO> allStudents = supplierBO.getAllSupplier();
             for (SupplierDTO s1 : allStudents) {
-                System.out.println(s1.getSupId());
                 supTable.getItems().add(new SupplierTM(s1.getSupId(), s1.getName(), s1.getPhone(), s1.getAddress(), s1.getSupType()));
             }
         } catch (Exception e) {
@@ -58,11 +57,9 @@ public class ViewSuppliersFormController {
     }
 
     public void supNameFeildOnAction(KeyEvent actionEvent) {
-        System.out.println(supNameFeild.getText());
         ArrayList<SupplierDTO> resultSuppliers = supplierBO.searchByName(supNameFeild.getText());
         supTable.getItems().clear();
         for (SupplierDTO supplier : resultSuppliers) {
-            System.out.println(supplier.getSupId()+"TEST - "+ supplier.getName());
             supTable.getItems().add(new SupplierTM(supplier.getSupId(), supplier.getName(), supplier.getPhone(), supplier.getAddress(), supplier.getSupType()));
         }
     }
