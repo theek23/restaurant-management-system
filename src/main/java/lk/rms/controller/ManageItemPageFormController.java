@@ -13,11 +13,12 @@ public class ManageItemPageFormController {
     public AnchorPane root;
     public JFXButton editItemBtn;
     public JFXButton addItemBtn;
+    public JFXButton addQtyBtn;
 
     @SneakyThrows
     public void addItemBtnOnAction(ActionEvent actionEvent) {
         Stage stage = new Stage();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/selectSupplierForm.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/addNewItemForm.fxml"))));
         stage.setTitle("New Item");
         stage.setResizable(false);
         stage.getIcons().add(new Image("asset/Logo.png"));
@@ -27,5 +28,16 @@ public class ManageItemPageFormController {
 
     public void editItemBtnOnAction(ActionEvent actionEvent) {
 
+    }
+
+    @SneakyThrows
+    public void addQtyBtnOnAction(ActionEvent actionEvent) {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/selectSupplierForm.fxml"))));
+        stage.setTitle("New Item");
+        stage.setResizable(false);
+        stage.getIcons().add(new Image("asset/Logo.png"));
+        stage.centerOnScreen();
+        stage.show();
     }
 }

@@ -1,6 +1,7 @@
 package lk.rms.bo;
 
 import lk.rms.bo.custome.impl.AddNewItemBOImpl;
+import lk.rms.bo.custome.impl.ItemCategoryBOImpl;
 import lk.rms.bo.custome.impl.SupplierBOImpl;
 
 public class BOFactory {
@@ -11,15 +12,16 @@ public class BOFactory {
     public static BOFactory getBoFactory(){return boFactory == null ? boFactory = new BOFactory() : boFactory;}
 
     public enum BOTypes{
-        ADDNEWITEM , SUPPLIER
+        ADDNEWITEM , SUPPLIER, ITEMCATEGORY
     }
     public SuperBO getBO(BOTypes types){
         switch (types){
             case ADDNEWITEM:
                 return new AddNewItemBOImpl();
-
             case SUPPLIER:
                 return new SupplierBOImpl();
+            case ITEMCATEGORY:
+                return new ItemCategoryBOImpl();
             default:
                 return null;
         }

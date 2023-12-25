@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import lk.rms.bo.BOFactory;
 import lk.rms.bo.custome.SupplierBO;
+import lk.rms.controller.tdm.SupplierTM;
 import lk.rms.dto.SupplierDTO;
 import lk.rms.util.AlertBOX.JFXAlertBox;
 import lombok.SneakyThrows;
@@ -39,6 +40,11 @@ public class EditSupplierController {
         typeCombo.setPromptText("Select Supplier Type");
 
         disableEdit();
+
+        searchField.setText("SUP00-0001");
+        searchBtn.setDisable(false);
+        searchBtn.fire();
+        searchBtn.setDisable(true);
     }
 
     private boolean validateEditedValues(){
@@ -166,6 +172,18 @@ public class EditSupplierController {
     }
 
     public void OnKeyTyped(KeyEvent keyEvent) {
+        validateEditedValues();
+    }
+
+    public void initializeData(SupplierTM selectedSupplier) {
+        gotSupplierDTO = new SupplierDTO(selectedSupplier.getSupId(),selectedSupplier.getSupType(),selectedSupplier.getName(),selectedSupplier.getPhone(),selectedSupplier.getAddress());
+
+        supIdTxt.setText(selectedSupplier.getSupId());
+        nameTxt.setText(selectedSupplier.getName());
+        typeCombo.setValue(selectedSupplier.getSupType());
+        pNoTxt.setText(selectedSupplier.getPhone());
+        addressTxt.setText(selectedSupplier.getAddress());
+        enableEdit();
         validateEditedValues();
     }
 }

@@ -3,9 +3,12 @@ package lk.rms.controller;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.AnchorPane;
 import lk.rms.bo.BOFactory;
 import lk.rms.bo.custome.SupplierBO;
 import lk.rms.controller.tdm.SupplierTM;
@@ -24,11 +27,13 @@ public class ViewSuppliersFormController {
     public TableColumn pnoColumn;
     public TableColumn addressColumn;
     public TableColumn typeColumn;
+    public AnchorPane root;
 
     SupplierBO supplierBO = (SupplierBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.SUPPLIER);
 
     public void initialize(){
         setUi();
+        setTableClickAction();
     }
     private void setUi(){
         idColumn.setCellValueFactory(new PropertyValueFactory<>("supId"));
@@ -50,6 +55,31 @@ public class ViewSuppliersFormController {
         } catch (Exception e) {
             new JFXAlertBox().error("ERROR Message - "+e+"");
             e.printStackTrace();
+        }
+    }
+    private void setTableClickAction() {
+        supTable.setOnMouseClicked(event -> {
+            if (event.getClickCount() == 2) { // Check for single click
+                handleTableClick();
+            }
+        });
+    }
+
+    @SneakyThrows
+    private void handleTableClick() {
+        SupplierTM selectedSupplier = (SupplierTM) supTable.getSelectionModel().getSelectedItem();
+
+        if (selectedSupplier != null) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../../../view/editSupplierForm.fxml"));
+            Parent editSupplierForm = loader.load();
+
+            EditSupplierController editSupplierController = loader.getController();
+
+            editSupplierController.initializeData(selectedSupplier);
+
+            root.getChildren().clear();
+            root.getChildren().add(editSupplierForm);
+
         }
     }
     public void srchBtnOnAction(ActionEvent actionEvent) {

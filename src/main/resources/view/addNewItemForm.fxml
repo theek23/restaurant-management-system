@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="739.0" prefWidth="473.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddNewItemFormController">
    <children>
       <ImageView fitHeight="462.0" fitWidth="473.0" layoutY="89.0" opacity="0.29">
@@ -29,7 +28,7 @@
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField editable="false" layoutX="65.0" layoutY="151.0" prefHeight="39.0" prefWidth="339.0" text="I00-001">
+      <TextField fx:id="itmIdTxt" editable="false" layoutX="65.0" layoutY="151.0" prefHeight="39.0" prefWidth="339.0" text="I00-001">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
@@ -39,13 +38,13 @@
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <JFXComboBox layoutX="65.0" layoutY="252.0" prefHeight="39.0" prefWidth="339.0" />
+      <JFXComboBox fx:id="categoryCombo" layoutX="65.0" layoutY="252.0" prefHeight="39.0" prefWidth="339.0" />
       <Label layoutX="65.0" layoutY="213.0" text="ITEM CATEGOTY :">
          <font>
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="65.0" layoutY="364.0" prefHeight="39.0" prefWidth="339.0" text="R &amp; C EGG F">
+      <TextField fx:id="descriptionTxt" layoutX="65.0" layoutY="364.0" prefHeight="39.0" prefWidth="339.0" text="R &amp; C EGG F">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>

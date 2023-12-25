@@ -19,7 +19,7 @@
          </columns>
       </JFXTreeTableView>
       <JFXComboBox layoutX="57.0" layoutY="93.0" prefHeight="34.0" prefWidth="243.0" promptText="Choose Categoty" />
-      <JFXButton fx:id="addItemBtn" layoutX="57.0" layoutY="31.0" onAction="#addItemBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="ADD NEW ITEM" textFill="WHITE">
+      <JFXButton fx:id="addQtyBtn" layoutX="227.0" layoutY="31.0" onAction="#addQtyBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="ADD QTY" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
@@ -27,7 +27,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="editItemBtn" layoutX="225.0" layoutY="31.0" onAction="#editItemBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="EDIT ORDER" textFill="WHITE">
+      <JFXButton fx:id="editItemBtn" layoutX="395.0" layoutY="31.0" onAction="#editItemBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="EDIT ORDER" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
@@ -36,5 +36,13 @@
          </cursor>
       </JFXButton>
       <JFXComboBox editable="true" layoutX="675.0" layoutY="93.0" prefHeight="34.0" prefWidth="243.0" promptText="Search Item" />
+      <JFXButton fx:id="addItemBtn" layoutX="57.0" layoutY="31.0" onAction="#addItemBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="ADD ITEM" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

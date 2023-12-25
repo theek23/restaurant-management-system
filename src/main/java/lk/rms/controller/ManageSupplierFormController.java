@@ -17,6 +17,9 @@ public class ManageSupplierFormController {
     public void initialize(){
         setUi();
     }
+    public JFXButton getEditSupBtn(){
+        return editSupBtn;
+    }
     private void setUi(){
         setNavUI("viewSuppliersForm",viewSupBtn);
     }
@@ -40,6 +43,7 @@ public class ManageSupplierFormController {
     }
     @SneakyThrows
     public void editSupBtnOnAction(ActionEvent actionEvent) {
+        System.out.println("test");
         setNavUI("editSupplierForm",editSupBtn);
     }
 

@@ -2,6 +2,7 @@ package lk.rms.util;
 
 import lk.rms.embedded.QTYDetail;
 import lk.rms.entity.Item;
+import lk.rms.entity.ItemCategory;
 import lk.rms.entity.QtyDetails;
 import lk.rms.entity.Supplier;
 import lombok.SneakyThrows;
@@ -28,7 +29,8 @@ public class FactoryConfiguration {
         Configuration configuration = new Configuration().mergeProperties(properties)
                 .addAnnotatedClass(Item.class)
                 .addAnnotatedClass(QtyDetails.class)
-                .addAnnotatedClass(Supplier.class);
+                .addAnnotatedClass(Supplier.class)
+                .addAnnotatedClass(ItemCategory.class);
         sessionFactory = configuration.buildSessionFactory();
 
 

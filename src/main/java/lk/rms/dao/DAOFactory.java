@@ -1,5 +1,6 @@
 package lk.rms.dao;
 
+import lk.rms.dao.custom.impl.ItemCategoryDAOImpl;
 import lk.rms.dao.custom.impl.ItemDAOImpl;
 import lk.rms.dao.custom.impl.QTYDetailsDAOImpl;
 import lk.rms.dao.custom.impl.SupplierDAOImpl;
@@ -14,7 +15,7 @@ public class DAOFactory {
     public static DAOFactory getDaoFactory (){return daoFactory == null ? daoFactory = new DAOFactory() : daoFactory;}
 
     public enum DAOTypes{
-        ITEM, SUPPLIER, QTYDETAILS
+        ITEM, SUPPLIER, QTYDETAILS, ITEMCATEGORY
     }
 
     public SuperDAO getDAO(DAOTypes types){
@@ -25,6 +26,8 @@ public class DAOFactory {
                 return new SupplierDAOImpl();
             case QTYDETAILS:
                 return new QTYDetailsDAOImpl();
+            case ITEMCATEGORY:
+                return new ItemCategoryDAOImpl();
             default:
                 return null;
         }

@@ -8,6 +8,7 @@
 
 <AnchorPane fx:id="root" prefHeight="663.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ManageSupplierFormController">
     <children>
+
       <AnchorPane fx:id="supplierRoot" layoutX="33.0" layoutY="91.0" prefHeight="550.0" prefWidth="890.0" />
       <Pane layoutX="47.0" layoutY="18.0" prefHeight="58.0" prefWidth="862.0" style="-fx-border-color: black;">
          <children>
