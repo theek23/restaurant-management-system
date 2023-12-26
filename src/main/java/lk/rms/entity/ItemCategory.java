@@ -7,6 +7,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -23,7 +24,8 @@ public class ItemCategory implements SuperEntity{
     @Column(name = "category_name")
     private String cateName;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    private List<ItemSubCategory> itemSubCategories;
 
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "category")
+    private List<Item> items = new ArrayList<>();
 }

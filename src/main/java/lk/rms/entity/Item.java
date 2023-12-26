@@ -22,8 +22,9 @@ public class Item implements SuperEntity{
     @Id
     @Column(name = "item_id")
     private String itemID;
-    @Column(name = "category")
-    private String category;
+    @ManyToOne
+    @JoinColumn(name = "category_id", referencedColumnName = "category_id") // Adjust column names accordingly
+    private ItemCategory category;
     @Column(name = "sub_category")
     private String subCategory;
     @Column(name = "description")
@@ -33,7 +34,7 @@ public class Item implements SuperEntity{
     @Column(name = "qty_on_hand")
     private Integer qtyOnHand;
 
-    public Item(String itemID, String category, String subCategory, String description, Double sellingPrice, Integer qtyOnHand) {
+    public Item(String itemID, ItemCategory category, String subCategory, String description, Double sellingPrice, Integer qtyOnHand) {
         this.itemID = itemID;
         this.category = category;
         this.subCategory = subCategory;
@@ -41,7 +42,6 @@ public class Item implements SuperEntity{
         this.sellingPrice = sellingPrice;
         this.qtyOnHand = qtyOnHand;
     }
-
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "item")
     private List<QtyDetails> qtyDetails = new ArrayList<>();
 }
