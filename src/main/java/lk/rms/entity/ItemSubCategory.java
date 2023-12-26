@@ -7,23 +7,23 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-@Table (name = "item_category")
+@Table(name = "item_sub_category")
 @Cacheable
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-public class ItemCategory implements SuperEntity{
+public class ItemSubCategory implements SuperEntity {
     @Id
-    @Column(name = "category_id")
-    private String cateID;
-    @Column(name = "category_name")
-    private String cateName;
+    @Column(name = "cat_id")
+    private String subCatID;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    private List<ItemSubCategory> itemSubCategories;
+    @Column(name = "name")
+    private String subCatName;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id") // This is the foreign key column in the item_sub_category table
+    private ItemCategory category;
 }

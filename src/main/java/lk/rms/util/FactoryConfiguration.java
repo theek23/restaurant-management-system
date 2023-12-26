@@ -1,10 +1,7 @@
 package lk.rms.util;
 
 import lk.rms.embedded.QTYDetail;
-import lk.rms.entity.Item;
-import lk.rms.entity.ItemCategory;
-import lk.rms.entity.QtyDetails;
-import lk.rms.entity.Supplier;
+import lk.rms.entity.*;
 import lombok.SneakyThrows;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -30,7 +27,8 @@ public class FactoryConfiguration {
                 .addAnnotatedClass(Item.class)
                 .addAnnotatedClass(QtyDetails.class)
                 .addAnnotatedClass(Supplier.class)
-                .addAnnotatedClass(ItemCategory.class);
+                .addAnnotatedClass(ItemCategory.class)
+                .addAnnotatedClass(ItemSubCategory.class);
         sessionFactory = configuration.buildSessionFactory();
 
 
