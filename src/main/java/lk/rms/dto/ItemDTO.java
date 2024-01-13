@@ -13,7 +13,7 @@ import lombok.ToString;
 @ToString
 public class ItemDTO {
     private String itemID;
-    private ItemCategory category;
+    private ItemCategoryDTO category;
     private String subCategory;
     private String description;
     private Double sellingPrice;

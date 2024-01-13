@@ -24,7 +24,10 @@ public class ItemCategory implements SuperEntity{
     @Column(name = "category_name")
     private String cateName;
 
-
+    public ItemCategory(String cateID, String cateName) {
+        this.cateID = cateID;
+        this.cateName = cateName;
+    }
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "category")
     private List<Item> items = new ArrayList<>();

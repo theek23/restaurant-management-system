@@ -21,7 +21,7 @@
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="itmIdTxt" editable="false" layoutX="67.0" layoutY="200.0" prefHeight="39.0" prefWidth="255.0" promptText="I00-001">
+      <TextField fx:id="itmIdTxt" editable="false" focusTraversable="false" layoutX="67.0" layoutY="200.0" prefHeight="39.0" prefWidth="255.0" promptText="I00-001">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
@@ -47,7 +47,7 @@
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="sellingPrcTXT" layoutX="537.0" layoutY="304.0" prefHeight="39.0" prefWidth="212.0" promptText="0.00">
+      <TextField fx:id="sellingPrcTXT" layoutX="537.0" layoutY="304.0" onKeyPressed="#sellingPrcTXTOnAction" prefHeight="39.0" prefWidth="212.0" promptText="0.00">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
@@ -77,7 +77,7 @@
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="qtyOnHandTxt" layoutX="494.0" layoutY="409.0" prefHeight="39.0" prefWidth="255.0" promptText="0">
+      <TextField fx:id="qtyOnHandTxt" layoutX="494.0" layoutY="409.0" onKeyPressed="#qtyOnHandTxtOnAction" prefHeight="39.0" prefWidth="255.0" promptText="0">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>

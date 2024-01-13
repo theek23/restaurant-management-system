@@ -104,6 +104,17 @@ public class ItemDAOImpl implements ItemDAO {
 
     @Override
     public String generateNewID() {
-        return null;
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        String hql = "SELECT i.itemID FROM Item i ORDER BY i.itemID DESC";
+        Query query = session.createQuery(hql);
+        query.setMaxResults(1);
+        String lastItemId = (String) query.uniqueResult();
+
+        transaction.commit();
+        session.close();
+
+        return lastItemId;
     }
 }

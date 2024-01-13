@@ -1,9 +1,11 @@
 package lk.rms.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TreeTableColumn;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -14,6 +16,18 @@ public class ManageItemPageFormController {
     public JFXButton editItemBtn;
     public JFXButton addItemBtn;
     public JFXButton addQtyBtn;
+
+    public JFXTreeTableView itemTable;
+    public TreeTableColumn itemIdCol;
+    public TreeTableColumn decCol;
+    public TreeTableColumn catCol;
+    public TreeTableColumn priceCol;
+    public TreeTableColumn qtyCol;
+
+
+    public void initialize(){
+
+    }
 
     @SneakyThrows
     public void addItemBtnOnAction(ActionEvent actionEvent) {

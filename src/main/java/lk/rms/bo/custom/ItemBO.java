@@ -24,4 +24,8 @@ public interface ItemBO extends SuperBO {
 
     @SneakyThrows
     boolean deleteItem(String itemID);
+
+    @SneakyThrows
+    String generateNewId();
+
 }

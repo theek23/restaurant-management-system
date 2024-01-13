@@ -3,8 +3,10 @@ package lk.rms.bo.custom.impl;
 import lk.rms.bo.custom.ItemBO;
 import lk.rms.dao.DAOFactory;
 import lk.rms.dao.custom.ItemDAO;
+import lk.rms.dto.ItemCategoryDTO;
 import lk.rms.dto.ItemDTO;
 import lk.rms.entity.Item;
+import lk.rms.entity.ItemCategory;
 
 import java.util.ArrayList;
 
@@ -17,7 +19,10 @@ public class ItemBOImpl implements ItemBO {
         for (Item entity : itemDAO.getAll()) {
             allItems.add(new ItemDTO(
                     entity.getItemID(),
-                    entity.getCategory(),
+                    new ItemCategoryDTO(
+                            entity.getCategory().getCateID(),
+                            entity.getCategory().getCateName()
+                    ),
                     entity.getSubCategory(),
                     entity.getDescription(),
                     entity.getSellingPrice(),
@@ -33,7 +38,10 @@ public class ItemBOImpl implements ItemBO {
         if (entity != null){
             return new ItemDTO(
                     entity.getItemID(),
-                    entity.getCategory(),
+                    new ItemCategoryDTO(
+                            entity.getCategory().getCateID(),
+                            entity.getCategory().getCateName()
+                    ),
                     entity.getSubCategory(),
                     entity.getDescription(),
                     entity.getSellingPrice(),
@@ -52,7 +60,10 @@ public class ItemBOImpl implements ItemBO {
     public boolean saveItem(ItemDTO itemDTO) {
         return itemDAO.save(new Item(
                 itemDTO.getItemID(),
-                itemDTO.getCategory(),
+                new ItemCategory(
+                        itemDTO.getCategory().getCateID(),
+                        itemDTO.getCategory().getCateName()
+                ),
                 itemDTO.getSubCategory(),
                 itemDTO.getDescription(),
                 itemDTO.getSellingPrice(),
@@ -64,7 +75,10 @@ public class ItemBOImpl implements ItemBO {
     public boolean updateItem(ItemDTO itemDTO) {
         return itemDAO.update(new Item(
                 itemDTO.getItemID(),
-                itemDTO.getCategory(),
+                new ItemCategory(
+                        itemDTO.getCategory().getCateID(),
+                        itemDTO.getCategory().getCateName()
+                ),
                 itemDTO.getSubCategory(),
                 itemDTO.getDescription(),
                 itemDTO.getSellingPrice(),
@@ -75,5 +89,22 @@ public class ItemBOImpl implements ItemBO {
     @Override
     public boolean deleteItem(String itemID) {
         return itemDAO.delete(itemID);
+    }
+
+    @Override
+    public String generateNewId() {
+        String lastID = itemDAO.generateNewID();
+
+        if (lastID == null) {
+            return "ITM00-0001";
+        } else {
+            int lastNumber = Integer.parseInt(lastID.substring(7));
+
+            int newNumber = lastNumber+1;
+
+            String newId = String.format("ITM00-%04d", newNumber);
+
+            return newId;
+        }
     }
 }

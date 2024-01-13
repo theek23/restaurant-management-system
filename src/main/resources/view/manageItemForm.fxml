@@ -10,12 +10,13 @@
 
 <AnchorPane fx:id="root" prefHeight="663.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.ManageItemPageFormController">
    <children>
-      <JFXTreeTableView layoutX="57.0" layoutY="149.0" prefHeight="499.0" prefWidth="862.0" stylesheets="@../styles/effectsStyles.css">
+      <JFXTreeTableView fx:id="itemTable" layoutX="57.0" layoutY="149.0" prefHeight="499.0" prefWidth="862.0" stylesheets="@../styles/effectsStyles.css">
          <columns>
-            <TreeTableColumn prefWidth="144.79998397827148" text="ITEM ID" />
-            <TreeTableColumn prefWidth="398.40000915527344" text="DESCRIPTION" />
-            <TreeTableColumn prefWidth="176.0" text="CATEGORTY" />
-            <TreeTableColumn prefWidth="154.39996337890625" text="SELLING PRICE" />
+            <TreeTableColumn fx:id="itemIdCol" prefWidth="126.40002822875977" text="ITEM ID" />
+            <TreeTableColumn fx:id="decCol" prefWidth="341.6000213623047" text="DESCRIPTION" />
+            <TreeTableColumn fx:id="catCol" prefWidth="180.79998779296875" text="CATEGORTY" />
+            <TreeTableColumn fx:id="priceCol" prefWidth="127.99993896484375" text="SELLING PRICE" />
+            <TreeTableColumn fx:id="qtyCol" prefWidth="83.19998779296873" text="QTY On Hand" />
          </columns>
       </JFXTreeTableView>
       <JFXComboBox layoutX="57.0" layoutY="93.0" prefHeight="34.0" prefWidth="243.0" promptText="Choose Categoty" />
@@ -27,7 +28,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="editItemBtn" layoutX="395.0" layoutY="31.0" onAction="#editItemBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="EDIT ORDER" textFill="WHITE">
+      <JFXButton fx:id="editItemBtn" layoutX="395.0" layoutY="31.0" onAction="#editItemBtnOnAction" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: gray;" text="EDIT ITEM" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
