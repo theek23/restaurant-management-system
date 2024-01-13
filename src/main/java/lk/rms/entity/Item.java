@@ -23,7 +23,7 @@ public class Item implements SuperEntity{
     @Column(name = "item_id")
     private String itemID;
     @ManyToOne
-    @JoinColumn(name = "category_id", referencedColumnName = "category_id") // Adjust column names accordingly
+    @JoinColumn(name = "category_id", referencedColumnName = "category_id")
     private ItemCategory category;
     @Column(name = "sub_category")
     private String subCategory;

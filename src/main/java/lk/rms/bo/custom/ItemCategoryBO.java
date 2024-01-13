@@ -1,4 +1,4 @@
-package lk.rms.bo.custome;
+package lk.rms.bo.custom;
 
 import lk.rms.bo.SuperBO;
 import lk.rms.dto.ItemCategoryDTO;
@@ -10,4 +10,6 @@ public interface ItemCategoryBO extends SuperBO {
 
     @SneakyThrows
     ArrayList<ItemCategoryDTO> getAllItemCategories();
+
+    ArrayList<String> getAllCategoryNames();
 }

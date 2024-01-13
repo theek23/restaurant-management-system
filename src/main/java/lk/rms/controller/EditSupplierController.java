@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import lk.rms.bo.BOFactory;
-import lk.rms.bo.custome.SupplierBO;
+import lk.rms.bo.custom.SupplierBO;
 import lk.rms.controller.tdm.SupplierTM;
 import lk.rms.dto.SupplierDTO;
 import lk.rms.util.AlertBOX.JFXAlertBox;

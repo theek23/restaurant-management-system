@@ -9,55 +9,55 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="634.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddNewItemFormController">
+<AnchorPane prefHeight="641.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddNewItemFormController">
    <children>
-      <Label layoutX="367.0" layoutY="14.0" text="ADD NEW ITEM">
+      <Label layoutX="315.0" layoutY="24.0" text="ADD NEW ITEM">
          <font>
             <Font name="Segoe UI Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="65.0" layoutY="113.0" text="ITEM ID :">
+      <Label layoutX="67.0" layoutY="162.0" text="ITEM ID :">
          <font>
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="itmIdTxt" editable="false" layoutX="65.0" layoutY="151.0" prefHeight="39.0" prefWidth="255.0" text="I00-001">
+      <TextField fx:id="itmIdTxt" editable="false" layoutX="67.0" layoutY="200.0" prefHeight="39.0" prefWidth="255.0" promptText="I00-001">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="554.0" layoutY="108.0" text="ITEM DESCRIPTION :">
+      <Label layoutX="494.0" layoutY="154.0" text="ITEM DESCRIPTION :">
          <font>
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="categoryCombo" layoutX="65.0" layoutY="252.0" prefHeight="39.0" prefWidth="255.0" />
-      <Label layoutX="65.0" layoutY="213.0" text="ITEM CATEGOTY :">
+      <JFXComboBox fx:id="categoryCombo" layoutX="67.0" layoutY="301.0" onAction="#categoryComboOnAction" prefHeight="39.0" prefWidth="255.0" />
+      <Label layoutX="67.0" layoutY="262.0" text="ITEM CATEGOTY :">
          <font>
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="descriptionTxt" layoutX="554.0" layoutY="148.0" prefHeight="39.0" prefWidth="255.0" text="R &amp; C EGG F">
+      <TextField fx:id="descriptionTxt" layoutX="494.0" layoutY="194.0" prefHeight="39.0" prefWidth="255.0" promptText="R &amp; C EGG F">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="554.0" layoutY="218.0" text="SELLING PRICE">
+      <Label layoutX="494.0" layoutY="264.0" text="SELLING PRICE">
          <font>
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="597.0" layoutY="258.0" prefHeight="39.0" prefWidth="212.0">
+      <TextField fx:id="sellingPrcTXT" layoutX="537.0" layoutY="304.0" prefHeight="39.0" prefWidth="212.0" promptText="0.00">
          <font>
             <Font name="Segoe UI" size="18.0" />
          </font>
       </TextField>
-      <Label layoutX="555.0" layoutY="266.0" text="Rs." textFill="RED">
+      <Label layoutX="495.0" layoutY="311.0" text="Rs." textFill="RED">
          <font>
             <Font name="Segoe UI Bold" size="19.0" />
          </font>
       </Label>
-      <JFXButton fx:id="saveBtn" layoutX="108.0" layoutY="558.0" onAction="#saveBtnOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: gray;" text="SAVE ITEM" textFill="WHITE">
+      <JFXButton fx:id="saveBtn" layoutX="293.0" layoutY="529.0" onAction="#saveBtnOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: gray;" text="SAVE ITEM" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
@@ -66,5 +66,21 @@
          </cursor>
       </JFXButton>
       <Separator layoutX="2.0" layoutY="631.0" prefHeight="3.0" prefWidth="470.0" />
+      <JFXComboBox fx:id="subCategoryCombo" disable="true" layoutX="67.0" layoutY="405.0" prefHeight="39.0" prefWidth="255.0" />
+      <Label layoutX="67.0" layoutY="366.0" text="ITEM SUB CATEGOTY :">
+         <font>
+            <Font name="Segoe UI Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="494.0" layoutY="369.0" text="QTY On Hand">
+         <font>
+            <Font name="Segoe UI Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qtyOnHandTxt" layoutX="494.0" layoutY="409.0" prefHeight="39.0" prefWidth="255.0" promptText="0">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>

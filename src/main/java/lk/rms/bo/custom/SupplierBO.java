@@ -1,7 +1,6 @@
-package lk.rms.bo.custome;
+package lk.rms.bo.custom;
 
 import lk.rms.bo.SuperBO;
-import lk.rms.dto.SupplierDTO;
 import lk.rms.dto.SupplierDTO;
 import lombok.SneakyThrows;
 

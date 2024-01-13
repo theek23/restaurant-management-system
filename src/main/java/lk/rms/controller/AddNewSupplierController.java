@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.rms.bo.BOFactory;
-import lk.rms.bo.custome.SupplierBO;
+import lk.rms.bo.custom.SupplierBO;
 import lk.rms.dto.SupplierDTO;
 import lk.rms.util.AlertBOX.JFXAlertBox;
 import lombok.SneakyThrows;

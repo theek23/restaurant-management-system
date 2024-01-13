@@ -1,7 +1,6 @@
 package lk.rms.controller;
 
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,7 +9,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.rms.bo.BOFactory;
-import lk.rms.bo.custome.SupplierBO;
+import lk.rms.bo.custom.SupplierBO;
 import lk.rms.controller.tdm.SupplierTM;
 import lk.rms.dto.SupplierDTO;
 import lk.rms.util.AlertBOX.JFXAlertBox;

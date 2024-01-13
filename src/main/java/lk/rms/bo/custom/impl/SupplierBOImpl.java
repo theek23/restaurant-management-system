@@ -1,6 +1,6 @@
-package lk.rms.bo.custome.impl;
+package lk.rms.bo.custom.impl;
 
-import lk.rms.bo.custome.SupplierBO;
+import lk.rms.bo.custom.SupplierBO;
 import lk.rms.dao.DAOFactory;
 import lk.rms.dao.custom.SupplierDAO;
 import lk.rms.dto.SupplierDTO;

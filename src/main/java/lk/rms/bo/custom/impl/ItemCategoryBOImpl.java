@@ -1,6 +1,6 @@
-package lk.rms.bo.custome.impl;
+package lk.rms.bo.custom.impl;
 
-import lk.rms.bo.custome.ItemCategoryBO;
+import lk.rms.bo.custom.ItemCategoryBO;
 import lk.rms.dao.DAOFactory;
 import lk.rms.dao.custom.ItemCategoryDAO;
 import lk.rms.dto.ItemCategoryDTO;
@@ -21,5 +21,13 @@ public class ItemCategoryBOImpl implements ItemCategoryBO {
             ));
         }
         return allItemCategories;
+    }
+
+    public ArrayList<String> getAllCategoryNames() {
+        ArrayList<String> allItemCategoryNames = new ArrayList<>();
+        for (ItemCategory entity : itemCategoryDAO.getAll()) {
+            allItemCategoryNames.add(entity.getCateID()+"-"+entity.getCateName());
+        }
+        return allItemCategoryNames;
     }
 }

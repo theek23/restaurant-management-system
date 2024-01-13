@@ -1,4 +1,4 @@
-package lk.rms.bo.custome;
+package lk.rms.bo.custom;
 
 import lk.rms.bo.SuperBO;
 import lk.rms.dto.ItemDTO;
@@ -6,7 +6,7 @@ import lombok.SneakyThrows;
 
 import java.util.ArrayList;
 
-public interface AddNewItemBO extends SuperBO {
+public interface ItemBO extends SuperBO {
     @SneakyThrows
     ArrayList<ItemDTO> getAllItems();
 

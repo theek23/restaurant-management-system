@@ -1,6 +1,6 @@
-package lk.rms.bo.custome.impl;
+package lk.rms.bo.custom.impl;
 
-import lk.rms.bo.custome.AddNewItemBO;
+import lk.rms.bo.custom.ItemBO;
 import lk.rms.dao.DAOFactory;
 import lk.rms.dao.custom.ItemDAO;
 import lk.rms.dto.ItemDTO;
@@ -8,7 +8,7 @@ import lk.rms.entity.Item;
 
 import java.util.ArrayList;
 
-public class AddNewItemBOImpl implements AddNewItemBO {
+public class ItemBOImpl implements ItemBO {
     private final ItemDAO itemDAO = (ItemDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DAOTypes.ITEM);
 
     @Override
