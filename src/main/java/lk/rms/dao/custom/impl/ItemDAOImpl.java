@@ -117,4 +117,24 @@ public class ItemDAOImpl implements ItemDAO {
 
         return lastItemId;
     }
+
+    @Override
+    public ArrayList<Item> getItemsByCategory(String catId) {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+
+        String hql = "FROM Item WHERE category.cateID = :catId";
+        Query query = session.createQuery(hql);
+        query.setParameter("catId", catId);
+        List<Item> list = query.list();
+
+        transaction.commit();
+        session.close();
+        Iterator<Item> iterator = list.iterator();
+        ArrayList<Item> allItems = new ArrayList<>();
+        while (iterator.hasNext()){
+            allItems.add(iterator.next());
+        }
+        return allItems;
+    }
 }

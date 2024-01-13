@@ -28,4 +28,5 @@ public interface ItemBO extends SuperBO {
     @SneakyThrows
     String generateNewId();
 
+    ArrayList<ItemDTO> getItemsByCategory(String catId);
 }

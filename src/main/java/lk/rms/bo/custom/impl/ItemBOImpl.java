@@ -107,4 +107,22 @@ public class ItemBOImpl implements ItemBO {
             return newId;
         }
     }
+
+    @Override
+    public ArrayList<ItemDTO> getItemsByCategory(String catId) {
+        ArrayList<ItemDTO> allItems = new ArrayList<>();
+        for (Item entity : itemDAO.getItemsByCategory(catId)) {
+            allItems.add(new ItemDTO(
+                    entity.getItemID(),
+                    new ItemCategoryDTO(
+                            entity.getCategory().getCateID(),
+                            entity.getCategory().getCateName()
+                    ),
+                    entity.getSubCategory(),
+                    entity.getDescription(),
+                    entity.getSellingPrice(),
+                    entity.getQtyOnHand()
+            ));
+        }
+        return allItems;    }
 }
