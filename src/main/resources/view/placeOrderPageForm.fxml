@@ -18,7 +18,7 @@
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="14.0" layoutY="77.0" prefHeight="38.0" prefWidth="186.0">
+      <TextField fx:id="orderIdTxt" layoutX="14.0" layoutY="77.0" prefHeight="38.0" prefWidth="186.0">
          <font>
             <Font size="20.0" />
          </font>
@@ -28,7 +28,7 @@
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="14.0" layoutY="172.0" prefHeight="43.0" prefWidth="186.0">
+      <TextField fx:id="dateTxt" layoutX="14.0" layoutY="172.0" prefHeight="43.0" prefWidth="186.0">
          <font>
             <Font size="20.0" />
          </font>
@@ -38,7 +38,7 @@
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="14.0" layoutY="259.0" prefHeight="38.0" prefWidth="186.0">
+      <TextField fx:id="customerNameTxt" layoutX="14.0" layoutY="259.0" prefHeight="38.0" prefWidth="186.0">
          <font>
             <Font size="20.0" />
          </font>
@@ -48,17 +48,17 @@
             <Font name="Segoe UI Bold" size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="14.0" layoutY="351.0" prefHeight="38.0" prefWidth="186.0">
+      <TextField fx:id="phoneTxt" layoutX="14.0" layoutY="351.0" prefHeight="38.0" prefWidth="186.0">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TableView layoutX="268.0" layoutY="77.0" prefHeight="319.0" prefWidth="454.0">
+      <TableView fx:id="itemTable" layoutX="268.0" layoutY="77.0" prefHeight="319.0" prefWidth="454.0">
         <columns>
-          <TableColumn prefWidth="91.20001220703125" text="Item ID" />
-          <TableColumn prefWidth="208.79998779296875" text="ITEM NAME" />
-            <TableColumn prefWidth="55.20001220703125" text="QTY" />
-            <TableColumn prefWidth="96.80002441406248" text="Price" />
+          <TableColumn fx:id="itemIdCol" prefWidth="91.20001220703125" text="Item ID" />
+          <TableColumn fx:id="itemNameCol" prefWidth="208.79998779296875" text="ITEM NAME" />
+            <TableColumn fx:id="qtyCol" prefWidth="55.20001220703125" text="QTY" />
+            <TableColumn fx:id="priceCol" prefWidth="96.80002441406248" text="Price" />
         </columns>
       </TableView>
       <Label layoutX="256.0" layoutY="427.0" text="TOTAL : " textFill="RED">
@@ -66,7 +66,7 @@
             <Font name="Segoe UI Bold" size="33.0" />
          </font>
       </Label>
-      <Label layoutX="598.0" layoutY="432.0" text="000000.00" textFill="RED">
+      <Label fx:id="totalTxt" layoutX="598.0" layoutY="432.0" text="000000.00" textFill="RED">
          <font>
             <Font name="Segoe UI Bold" size="25.0" />
          </font>
@@ -76,7 +76,7 @@
             <Font name="Segoe UI Bold" size="28.0" />
          </font>
       </Label>
-      <TextField alignment="TOP_RIGHT" layoutX="599.0" layoutY="474.0" prefHeight="43.0" prefWidth="122.0">
+      <TextField fx:id="cashTxt" alignment="TOP_RIGHT" layoutX="599.0" layoutY="474.0" prefHeight="43.0" prefWidth="122.0">
          <font>
             <Font size="20.0" />
          </font>
@@ -86,12 +86,12 @@
             <Font name="Segoe UI Bold" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="622.0" layoutY="529.0" text="000000.00" textFill="RED">
+      <Label fx:id="balanceTxt" layoutX="622.0" layoutY="529.0" text="000000.00" textFill="RED">
          <font>
             <Font name="Segoe UI Bold" size="20.0" />
          </font>
       </Label>
-      <JFXButton layoutX="31.0" layoutY="430.0" prefHeight="131.0" prefWidth="131.0" style="-fx-background-color: gray;" text="PWC" textFill="WHITE">
+      <JFXButton fx:id="pwpBtn" layoutX="31.0" layoutY="430.0" onAction="#pwpBtnOnAction" prefHeight="131.0" prefWidth="131.0" style="-fx-background-color: gray;" text="PWP" textFill="WHITE">
          <font>
             <Font size="27.0" />
          </font>
@@ -114,7 +114,7 @@
             <Font name="Segoe UI Bold" size="25.0" />
          </font>
       </Label>
-      <JFXButton layoutX="17.0" layoutY="614.0" prefHeight="55.0" prefWidth="212.0" style="-fx-background-color: gray;" text="Close Order" textFill="WHITE">
+      <JFXButton fx:id="closeOrderBtn" layoutX="17.0" layoutY="614.0" onAction="#closeOrderBtnOnAction" prefHeight="55.0" prefWidth="212.0" style="-fx-background-color: gray;" text="Close Order" textFill="WHITE">
          <font>
             <Font size="22.0" />
          </font>
@@ -122,7 +122,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="263.0" layoutY="614.0" prefHeight="55.0" prefWidth="212.0" style="-fx-background-color: gray;" text="Cash IN" textFill="WHITE">
+      <JFXButton fx:id="cashInBtn" layoutX="263.0" layoutY="614.0" onAction="#cashInBtnOnAction" prefHeight="55.0" prefWidth="212.0" style="-fx-background-color: gray;" text="Cash IN" textFill="WHITE">
          <font>
             <Font size="22.0" />
          </font>
@@ -130,7 +130,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton layoutX="510.0" layoutY="614.0" prefHeight="55.0" prefWidth="212.0" style="-fx-background-color: gray;" text="Place Order" textFill="WHITE">
+      <JFXButton fx:id="placeOrderBtn" layoutX="510.0" layoutY="614.0" onAction="#placeOrderBtnOnAction" prefHeight="55.0" prefWidth="212.0" style="-fx-background-color: gray;" text="Place Order" textFill="WHITE">
          <font>
             <Font size="22.0" />
          </font>

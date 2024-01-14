@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="435.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rms.controller.AddQtyFormController">
+   <children>
+      <Label layoutX="27.0" layoutY="35.0" text="Supplier Name :">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="itemTable" layoutX="307.0" layoutY="71.0" prefHeight="165.0" prefWidth="396.0">
+        <columns>
+          <TableColumn fx:id="itemIdCol" prefWidth="95.199951171875" text="Item ID" />
+            <TableColumn fx:id="itmDecCol" prefWidth="170.4000244140625" text="Description" />
+          <TableColumn fx:id="itmCatCol" prefWidth="68.0" text="Category" />
+            <TableColumn fx:id="qtyCol" prefWidth="63.199951171875" text="QTY On Hand" />
+        </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="137.0" text="Date &amp; Time :">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dateTimeTxt" editable="false" layoutX="27.0" layoutY="179.0" prefHeight="35.0" prefWidth="229.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <JFXComboBox fx:id="paymentStatusCombo" layoutX="27.0" layoutY="286.0" prefHeight="38.0" prefWidth="230.0" />
+      <Label layoutX="27.0" layoutY="247.0" text="Payment Status :">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="srchTxt" layoutX="431.0" layoutY="33.0" prefHeight="31.0" prefWidth="192.0" />
+      <JFXButton layoutX="634.0" layoutY="34.0" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: #bababa;" text="Search">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="307.0" layoutY="248.0" text="Cost :">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="costTxt" layoutX="307.0" layoutY="290.0" prefHeight="38.0" prefWidth="170.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="533.0" layoutY="250.0" text="Quantity :">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qtyTxt" layoutX="533.0" layoutY="292.0" prefHeight="38.0" prefWidth="170.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="saveBtn" layoutX="270.0" layoutY="378.0" onAction="#saveBtnOnAction" prefHeight="42.0" prefWidth="178.0" style="-fx-background-color: #bababa;" text="SAVE">
+         <font>
+            <Font name="Segoe UI Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ComboBox fx:id="supplierCombo" editable="true" focusTraversable="false" layoutX="25.0" layoutY="83.0" onAction="#supplierComboOnAction" onKeyPressed="#supplierComboKeyPressed" prefHeight="38.0" prefWidth="230.0" promptText="Supplier" />
+   </children>
+</AnchorPane>

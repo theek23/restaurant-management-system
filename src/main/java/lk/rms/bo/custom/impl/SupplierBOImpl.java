@@ -106,4 +106,15 @@ public class SupplierBOImpl implements SupplierBO {
 
         return resultSuppliers;
     }
+
+    @Override
+    public ArrayList<String> getAllSupplierNames() {
+        ArrayList<SupplierDTO> allSuppliers = getAllSupplier();
+        ArrayList<String> supplierNames = new ArrayList<>();
+
+        for (SupplierDTO supplier : allSuppliers) {
+            supplierNames.add(supplier.getName());
+        }
+        return supplierNames;
+    }
 }

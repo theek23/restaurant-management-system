@@ -29,4 +29,6 @@ public interface SupplierBO extends SuperBO {
     String generateNewId();
 
     ArrayList<SupplierDTO> searchByName(String enteredName);
+
+    ArrayList<String> getAllSupplierNames();
 }

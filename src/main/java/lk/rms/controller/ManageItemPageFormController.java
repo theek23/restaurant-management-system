@@ -138,7 +138,7 @@ public class ManageItemPageFormController {
     @SneakyThrows
     public void addQtyBtnOnAction(ActionEvent actionEvent) {
         Stage stage = new Stage();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/selectSupplierForm.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../../../view/addQtyForm.fxml"))));
         stage.setTitle("New Item");
         stage.setResizable(false);
         stage.getIcons().add(new Image("asset/Logo.png"));
